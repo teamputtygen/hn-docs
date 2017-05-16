@@ -1,0 +1,41 @@
+Platform Services
+=================
+
+Nuvla (SlipStream)
+------------------
+
+- `Nuvla Browser Interface <https://nuv.la>`_
+- `General Nuvla Information <http://sixsq.com/services/nuvla>`_
+- `SlipStream User Documentation <http://ssdocs.sixsq.com>`_
+- `SlipStream API Documentation <http://ssapi.sixsq.com>`_
+
+Onedata
+-------
+
+- Onezone Browser Interface (not yet operational)
+- `General Onedata Information <https://onedata.org>`_
+- `Onedata User Documentation <https://onedata.org/#/home/documentation/index.html>`_
+- `Onedata API Documentation <https://onedata.org/#/home/api/latest/onezone>`_
+
+Keycloak
+--------
+
+- Portal (not yet operational; will be on fed-id.nuv.la)
+- `General Keycloak Information <http://www.keycloak.org>`_
+- `Keycloak Documentation <http://www.keycloak.org/documentation.html>`_
+
+Exoscale
+--------
+
+- `Exoscale Portal <https://portal.exoscale.ch>`_
+- `General Exoscale Information <https://www.exoscale.ch>`_
+- `ExoscaleUser Documentation <https://community.exoscale.ch/documentation/>`_
+- `Exoscale API Documentation <https://community.exoscale.ch/api/>`_
+
+Open Telekom Cloud (OTC)
+------------------------
+
+- `OTC Portal <https://myworkplace.t-systems.com>`_
+- `General OTC Information <https://cloud.telekom.de/en/infrastructure/open-telekom-cloud/>`_
+- `OTC User Documentation <https://cloud.telekom.de/en/infrastructure/open-telekom-cloud/documentation/#navigation-product-subnavi>`_
+- `OTC API Reference <https://cloud.telekom.de/en/infrastructure/open-telekom-cloud/documentation/general-api-reference/>`_
