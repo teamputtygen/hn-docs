@@ -1,5 +1,8 @@
+Introduction
+============
+
 Platform Features
-=================
+-----------------
 
 Ten of Europe’s leading public research organisations launched the
 Helix Nebula Science Cloud (HNSciCloud) Pre-Commercial Procurement to
@@ -44,3 +47,13 @@ sector organisations with flexible means to make multi-year
 procurements of cloud-based services, taking full advantage of the
 reliability, flexibility, scalability and increasingly competitive
 pricing that can be offered by commercial providers.
+
+Architectural Overview
+----------------------
+
+Actors
+------
+
+Scope and Coverage
+------------------
+

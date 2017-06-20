@@ -20,7 +20,7 @@ Onedata
 Keycloak
 --------
 
-- Portal (not yet operational; will be on fed-id.nuv.la)
+- `Keycloak Portal <https://fed-id.nuv.la>`_ 
 - `General Keycloak Information <http://www.keycloak.org>`_
 - `Keycloak Documentation <http://www.keycloak.org/documentation.html>`_
 
@@ -29,7 +29,7 @@ Exoscale
 
 - `Exoscale Portal <https://portal.exoscale.ch>`_
 - `General Exoscale Information <https://www.exoscale.ch>`_
-- `ExoscaleUser Documentation <https://community.exoscale.ch/documentation/>`_
+- `Exoscale User Documentation <https://community.exoscale.ch/documentation/>`_
 - `Exoscale API Documentation <https://community.exoscale.ch/api/>`_
 
 Open Telekom Cloud (OTC)

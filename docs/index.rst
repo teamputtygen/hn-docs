@@ -8,8 +8,13 @@ Documentation for users of the HNSciCloud-Rhea cloud platform.
    :maxdepth: 1
    :hidden:
 
-   features.rst
-   partners.rst
-   services.rst
+   introduction.rst
+   getting-started.rst
+   how-to-account-admin.rst
+   how-to-data-manager.rst
+   how-to-researcher.rst
+   support.rst
+   service-docs.rst
+   consortium.rst
 
 
