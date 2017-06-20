@@ -178,3 +178,10 @@ Consortium
 Scope and Coverage
 ------------------
 
+This documentation covers the essentials for learning about and
+getting started with the HNSciCloud platform from the RHEA
+collaboration.  It contains only information specific to the platform
+as a whole.  Documentation for the individual services that comprise
+the platform are available elsewhere and may need to be consulted for
+anything other than simple use cases.  Links to that documentation are
+provided in the "Platform Services" section.
