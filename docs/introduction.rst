@@ -20,7 +20,7 @@ commercial services:
 
 - RHEA System Engineering & Cyber Security expertise
 - SixSq’s Nuvla, a SlipStream-based hybrid-cloud management service
-  and Cyfronet’s OneData for Data Management
+- Cyfronet’s OneData for Data Management
 - Open Telekom Cloud, T-Systems’ IaaS Cloud Service (OpenStack)
 - Exoscale IaaS Cloud Service (CloudStack)
 

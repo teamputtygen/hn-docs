@@ -12,7 +12,7 @@ Nuvla (SlipStream)
 Onedata
 -------
 
-- Onezone Browser Interface (not yet operational)
+- Onezone Browser Interface (obtain the URL from the data manager for your organization)
 - `General Onedata Information <https://onedata.org>`_
 - `Onedata User Documentation <https://onedata.org/#/home/documentation/index.html>`_
 - `Onedata API Documentation <https://onedata.org/#/home/api/latest/onezone>`_
