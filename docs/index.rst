@@ -9,10 +9,10 @@ Documentation for users of the HNSciCloud-Rhea cloud platform.
    :hidden:
 
    introduction.rst
-   getting-started.rst
-   how-to-account-admin.rst
-   how-to-data-manager.rst
-   how-to-researcher.rst
+   getting-started/index.rst
+   researcher/index.rst
+   administrator/index.rst
+   data-manager/index.rst
    support.rst
    service-docs.rst
    consortium.rst
