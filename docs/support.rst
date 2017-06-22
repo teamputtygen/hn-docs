@@ -37,4 +37,4 @@ issues involving several partners.
 
 The support services will be offered in English by either native
 speakers or minimum “B2” level. Support may also be available in the
-local languages of the partners (e.g. French ot German).
+local languages of the partners (e.g. French or German).
