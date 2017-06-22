@@ -11,8 +11,7 @@ by data coordinators.
 
    service-deployment
    replication
-   import-data
-   export-data
+   import-export-data
    
 
 
