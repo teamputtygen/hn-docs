@@ -1,8 +1,8 @@
 
-HNSciCloud Rhea Documentation
-=============================
+Rhea Cloud Platform Documentation
+=================================
 
-Documentation for users of the HNSciCloud-Rhea cloud platform.
+Document ID: **D-PRO-2.2-DOCS**
 
 .. toctree::
    :maxdepth: 1
