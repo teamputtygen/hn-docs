@@ -14,7 +14,7 @@ by researchers.
    kubernetes-cluster
    access-data
    create-applications
-   
+   binary-images   
 
 
 
