@@ -3,18 +3,18 @@ Deploy Docker Containers
 
 Docker_ is a convenient system for defining, packaging, and deploying
 applications.  It uses container technologies to allow portability
-between operating systems and to achieve short start-up latencies.  By
+between operating systems and to achieve fast start-up times.  By
 default it will use images from the `Docker Hub`_, an open registry of
 containers.
 
 On typical IaaS cloud infrastructures, you must first deploy a virtual
-machine, install Docker (Docker Compose), and then start your
-container.  SixSq provides a `Docker Compose Recipe`_ on Nuvla_ to
-make the installation of software and the deployment of containers
-easy. 
+machine, install Docker (`Docker Compose`_), and then start your
+container.  SixSq provides a Docker Compose recipe on Nuvla_ to make
+the installation of software and the deployment of containers easy.
 
-To launch the Docker Compose virtual machine, find the Docker-Compose
-component either in the App Store or the Workspace.
+To launch the Docker Compose virtual machine, find the `Docker Compose
+Component`_ either in the App Store or the Workspace (or by clicking
+the link!).
 
  - Click on "Deploy"
  - Choose the cloud you want to use, and
@@ -66,26 +66,22 @@ of how many times it has been loaded.
     web_1    |  * Debugger is active!
     web_1    |  * Debugger PIN: 241-972-540
 
-Note that instead of using `localhost` or `0.0.0.0`, you will need to
-use the **IP address of the virtual machine** (with the 5000 port!)
+Note that instead of using ``localhost`` or ``0.0.0.0``, you will need
+to use the **IP address of the virtual machine** (with the 5000 port!)
 from your remote browser.  If everything worked correctly, you should
 see a message like "Hello World! I have been seen 2 times.".
 
-From here you might want to look at the entries for deploying Docker
-Swarm or Kubernetes. 
+From here you might want to look at the entries :ref:`docker-swarm` or
+:ref:`kubernetes-cluster`.
 
 .. _Docker: https://www.docker.com
 
 .. _`Docker Hub`: https://hub.docker.com
 
-.. _`Docker Compose Recipe`: https://nuv.la/module/apps/Containers/docker-compose
-
 .. _Nuvla: https://nuv.la
 
+.. _`Docker Compose`: https://docs.docker.com/compose/
+
+.. _`Docker Compose Component`: https://nuv.la/module/apps/Containers/docker-compose
+
 .. _`Docker Compose Getting Started`: https://docs.docker.com/compose/gettingstarted/
-
-
-
-
-
-
