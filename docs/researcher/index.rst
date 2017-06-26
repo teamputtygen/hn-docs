@@ -11,6 +11,8 @@ by researchers.
 
    linux-vm
    windows-vm
+   docker-compose
+   docker-swarm
    kubernetes-cluster
    access-data
    create-applications
