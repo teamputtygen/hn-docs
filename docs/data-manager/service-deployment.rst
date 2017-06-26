@@ -58,39 +58,18 @@ the successful deployment of Onezone, click on the URL defined by
 ``ss:url.service`` and you will be redirected to the running Onezone service.
 
 On the front page of the Onezone you should see two login options.  For login
-in you should select the second option that uses FedIdP based authentication.
+in to the deployed instance of Onezone you should select the second option
+identified with the arrow on the image below - it uses FedIdP based
+authentication.
 
-..
-   TODO: generate new screenshot when KC is back on-line.
-   
    .. image:: images/onezone-login.png
       :alt: FedIdP based login to Onezone
       :align: center
 
-**Configuration with Keycloak**
-
-In order to enable federated identity management for users it is
-necessary to enable KeyCloak IdP in Onezone configuration. In order to
-do this, an entry has to be added to the ``auth.config`` file in
-``/opt/onedata/onezone`` folder.
-
-.. code-block:: erlang
-
-   [
-    {basicAuth, []},
-
-    {rhea, [
-        % Standard config
-        {auth_module, auth_keycloak},
-        {app_id, <<"OnezoneTest">>},
-        {app_secret, <<"8712ed65- ... -270a30291e76">>},
-        % Provider specific config
-        {xrds_endpoint, <<"https://fed-id.nuv.la/auth/realms/onedata/.well-known/openid-configuration">>}
-     ]}
-   ]
-
-More information on setup of various IdP's with Onezone can be found
-in the `official documentation
+In the case above, the configuration of the integration between Onezone and
+project's FedIdP (https://fed-id.nuv.la) was done automatically.  More
+information on setting up of various IdPs with Onezone can be found in the
+Onedata's `official documentation
 <https://onedata.org/#/home/documentation/doc/administering_onedata/openid_configuration.html>`_.
 
 Oneprovider
