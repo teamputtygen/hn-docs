@@ -6,8 +6,8 @@ Uploading of binary VM images is strongly discouraged.  Use of the
 Nuvla features for creating `portable recipes`_ (optionally with the
 `build feature`_) or the use of containers are preferred solutions.
 
-OTC
----
+Open Telkom Cloud (OTC)
+-----------------------
 
 Nonetheless, if you must use a binary VM image, you can upload the
 image to OTC.  The documentation for making private images available
