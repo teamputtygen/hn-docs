@@ -25,7 +25,7 @@ deployment parameters:
 
 .. image:: images/onezone-params-on-nuvla.png
    :alt: Onezone deployment parameters
-   :width: 90%
+   :width: 70%
    :align: center
 
 .
@@ -41,7 +41,6 @@ deployment parameters:
 
 .. image:: images/onezone-fedid-access-token.png
    :alt: FedIdP client registration access token for Onezone
-   :width: 90%
    :align: center
 
 .
@@ -58,8 +57,15 @@ When parameters are set, click on *Deploy Application Component* button.  After
 the successful deployment of Onezone, click on the URL defined by
 ``ss:url.service`` and you will be redirected to the running Onezone service.
 
-On the front page of the Onezone you should see two login options.  You should
-select the second option that uses FedIdP based authentication via.
+On the front page of the Onezone you should see two login options.  For login
+in you should select the second option that uses FedIdP based authentication.
+
+..
+   TODO: generate new screenshot when KC is back on-line.
+   
+   .. image:: images/onezone-login.png
+      :alt: FedIdP based login to Onezone
+      :align: center
 
 **Configuration with Keycloak**
 
