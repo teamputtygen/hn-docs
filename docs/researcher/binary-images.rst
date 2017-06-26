@@ -3,8 +3,11 @@ Binary VM Images
 ================
 
 Uploading of binary VM images is strongly discouraged.  Use of the
-Nuvla features for creating portable recipes (optionally with the
-"build" feature) or the use of containers are preferred solutions.
+Nuvla features for creating `portable recipes`_ (optionally with the
+`build feature`_) or the use of containers are preferred solutions.
+
+OTC
+---
 
 Nonetheless, if you must use a binary VM image, you can upload the
 image to OTC.  The documentation for making private images available
@@ -31,7 +34,15 @@ Integration with Nuvla
 ----------------------
 
 If you want to use this image from Nuvla, you must define it as a
-"Native Image".
+`Native Image`_. This requires that `cloud-init`_ be installed in the
+image (along with its Python dependency). Once defined as a native
+image, it can be used like any other SlipStream component.
 
-**TBD: Provide link and conditions to the standard documentation.**
 
+.. _`portable recipes`: http://ssdocs.sixsq.com/en/latest/tutorials/ss/images.html
+
+.. _`build feature`: http://ssdocs.sixsq.com/en/latest/tutorials/ss/faster-deployment.html 
+
+.. _`Native Image`: http://ssdocs.sixsq.com/en/latest/tutorials/ss/images.html#native-images
+
+.. _cloud-init: https://cloud-init.io
