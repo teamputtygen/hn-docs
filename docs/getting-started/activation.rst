@@ -25,6 +25,7 @@ This will redirect users to their respective login realm in `SixSq's Federated I
    :align: center
 
 3. For both eduGAIN and ELIXIR, users will then be presented with a comprehensive list of IdPs and a search field.
+4.
 eduGAIN:
 
 .. image:: ../images/edugain.png
@@ -63,4 +64,4 @@ Upon selection of the IdP, users will be redirected to their institute's login p
 
 .. _`support@sixsq.com`: support@sixsq.com
 
-.. _`here`: ../administrator/index.rst
+.. _`here`: ../administrator/index.html
