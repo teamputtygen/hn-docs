@@ -108,7 +108,12 @@ are in place.
 
 After that select **Cloud** - `exoscale-ch-gva` or `open-telekom-de1`.
 
-TODO: oVirt as cluster GUI manager.
+TODO: find a cluster GUI manager. 
+
+  * oVirt as cluster GUI manager. http://www.ovirt.org/download/ oVirt is a way
+    too heavy: it's a cluster manager and installs in 10 min.  Consider
+    something else.
+  * https://github.com/aravindavk/glusterfs-web
 
 Oneprovider
 -----------
