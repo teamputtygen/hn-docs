@@ -101,19 +101,27 @@ to be deployed as scalable application.  For that, data manager should select
 **Scalable deployment** option.  Later the number of cluster nodes can be
 managed by adding and removing them via API / `ss-node-{add,remove}` CLI.  More
 information on scalable applications in Nuvla can be found under
-http://ssdocs.sixsq.com/en/latest/tutorials/ss/scalable-applications.html Data
-manager should only be concerted with scaling up/down its provisioned GlusterFS
-cluster.  All the scalability workflow hooks for actually scaling the cluster
-are in place.
+http://ssdocs.sixsq.com/en/latest/tutorials/ss/scalable-applications.html.
+Data manager should only be concerted with scaling up/down of the provisioned
+GlusterFS cluster.  All the scalability workflow hooks for actually scaling the
+cluster are already in place the components definitions.
 
 After that select **Cloud** - `exoscale-ch-gva` or `open-telekom-de1`.
+Finally, click on `Deploy Application`.
 
-TODO: find a cluster GUI manager. 
+We are looking for an appropriate web GUI for monitoring and management of
+GlusterFS cluster that will be deployed along with the cluster to facilitate
+its management.
 
-  * oVirt as cluster GUI manager. http://www.ovirt.org/download/ oVirt is a way
-    too heavy: it's a cluster manager and installs in 10 min.  Consider
-    something else.
-  * https://github.com/aravindavk/glusterfs-web
+..
+  TODO: find a cluster GUI manager.
+
+    * oVirt as cluster GUI manager. http://www.ovirt.org/download/ oVirt is a way
+      too heavy: it's a cluster manager and installs in 10 min.  Consider
+      something else.
+    * https://github.com/aravindavk/glusterfs-web doesn't work out-of-the-box and
+      it's not for production.
+    * find another one!
 
 Oneprovider
 -----------
