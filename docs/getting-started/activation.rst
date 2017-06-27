@@ -26,11 +26,13 @@ This will redirect users to their respective login realm in `SixSq's Federated I
 
 3. For both eduGAIN and ELIXIR, users will then be presented with a comprehensive list of IdPs and a search field.
 eduGAIN:
+
 .. image:: ../images/edugain.png
    :alt: List of IdPs in eduGAIN
    :align: center
 
 ELIXIR:
+
 .. image:: ../images/elixir.png
    :alt: List of IdPs in ELIXIR
    :align: center
@@ -40,12 +42,12 @@ Upon selection of the IdP, users will be redirected to their institute's login p
 4. If users already have an active session, then they'll be automatically redirected to Nuvla, without going to the IdP's login page.
 
 .. image:: ../images/nuvlaLoggedIn.png
-   :alt: List of IdPs in ELIXIR
+   :alt: Logged in
    :align: center
 
 5. At this point, new users have been automatically registered in Nuvla and their accounts are now active.
 
----
+------------
 
 6. **IF USER IS AN ACCOUNT MANAGER**, then he/she must send an email to `support@sixsq.com`_ asking *admin* rights to the tenant, which shall be granted by SixSq, in `SixSq's Federated Identity Portal`_, where the account managers can then manage users, groups and roles (as described in `here`_).
 
