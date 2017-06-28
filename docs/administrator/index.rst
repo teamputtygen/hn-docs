@@ -25,3 +25,4 @@ and login.
 
    groups
    roles
+   management-api
