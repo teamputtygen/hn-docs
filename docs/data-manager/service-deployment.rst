@@ -193,8 +193,6 @@ different configuration options must be specified:
 
 .. image:: images/obs-s3-storage.png
 
-NB!  You need to select `Signature Version` 4 for OTC.
-
 **GlusterFS Oneprovider on cloud via Nuvla**
 
 .. image:: images/gluster-storage.png
