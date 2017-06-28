@@ -61,7 +61,7 @@ Client Roles
 
 Keycloak clients are trusted browser apps and web services in a realm. These clients can request a login.
 
-Account managers can also define client specific roles. IT IS NOT RECOMMENDED that account managers change the roles of already existing clients.
+Account managers can also define client specific roles. IT IS NOT RECOMMENDED that account managers change the roles of already existing clients, as the default tenant clients (and respective Client Templates) are not configured to propagate the user client roles (which are defined on the *Clients* section under the *Scope* tab, for each client).
 
 Manage Client Roles
 ~~~~~~~~~~~~~~~~~~~
