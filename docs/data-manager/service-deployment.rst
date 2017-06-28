@@ -66,7 +66,7 @@ in to the deployed instance of Onezone you should select the second option
 identified with the arrow on the image below - it uses FedIdP based
 authentication.
 
-.. image:: images/onezone-login.png
+.. image:: /images/onezone-login.png
   :alt: FedIdP based login to Onezone
   :align: center
 
