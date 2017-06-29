@@ -22,12 +22,12 @@ Users access their data on VMs using POSIX.  The data becomes available on the
 VMs via mounting the required data sources with the help of `Oneclient tool
 <https://onedata.org/#/home/documentation/doc/using_onedata/oneclient.html>`_.
 When deploying VMs via `Nuvla <https://nuv.la>`_ service, users should use or,
-when building their own components, inherit from `oneclient` component, which
-is available at https://nuv.la/module/HNSciCloud-RHEA/onedata/oneclient.
+when building their own components, inherit from `oneclient-<OS>` components,
+which are available at https://nuv.la/module/HNSciCloud-RHEA/onedata.
 
-At the moment, for oneclinet to mount the data volumes on VMs and enable POSIX
-access to the data, users need to provide it with a data access token and the
-Cloud local Oneprovider endpoint.
+At the moment, for `oneclinet` to mount the data volumes on VMs and enable
+POSIX access to the data, users need to provide it with a data access token and
+the Cloud local Oneprovider endpoint.
 
 Next versions of the platform will be extended to contain the auto-discovery of
 the Cloud local Oneprovider as well as auto-generation of the data access
@@ -64,20 +64,30 @@ the Cloud of your choice.
 Provision VM for data access
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Go to https://nuv.la/module/HNSciCloud-RHEA/onedata/oneclient and click on
+Here it is explained on the example of CentOS 7 image.  Go to
+https://nuv.la/module/HNSciCloud-RHEA/onedata/oneclient-centos7 and click on
 `Deploy`.
 
 .. image:: images/oneclient-deploy.png
 
 Select the Cloud on which you want to deploy the client via `Cloud` drop-down.
-Provide **access-token** and **provider-hostname** parameters.  Leave
-**oneclient-version** blank.  Then, click `Deploy Application Compnent` button.
+Provide **access-token** and **provider-hostname** parameters.   Optionally
+change the default mount point of the spaces in **mount-point** parameter.
+Then, click `Deploy Application Compnent` button.
 
 Accessing data on VM
 --------------------
 
-After the VM with the data access client is deployed, users should be able to
-access their data via the predefined mount point on the VM.
+After the successful deployment, user should expect the spaces (supported by
+the selected provider) with the files available for POSIX access under
+**mount-point**.  Example ::
+
+    # ls -1 /mnt/onedata/
+    space-s3
+    space-gluster
+    # ls -1 /mnt/onedata/space-s3
+    test.txt
+    #
 
 External documentation
 ----------------------
