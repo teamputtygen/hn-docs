@@ -83,15 +83,15 @@ institute's login page.
 
 ------------
 
-9. **USERS THAT ARE AN ACCOUNT MANAGER** must send an email to
+9. Users that are an **ACCOUNT MANAGER** must send an email to
    `support@sixsq.com`_ asking *admin* rights to the tenant, which
    shall be granted by SixSq, in `SixSq's Federated Identity Portal`_,
    where the account managers can then manage users, groups and roles
    (as described in `here`_).
 
-10. **USERS WHO ARE NOT AN ACCOUNT MANAGER**, must contact the account
-    manager for the realm so that the manager can assign roles to them
-    or add them to a group.
+10. **All other users** must contact the account manager for the realm
+    so that the manager can assign roles to them or add them to a
+    group.
 
 .. _`Nuvla`: https://nuv.la
 
