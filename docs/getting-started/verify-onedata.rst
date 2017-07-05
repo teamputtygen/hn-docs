@@ -1,3 +1,0 @@
-Verifying Data Management Services
-==================================
-

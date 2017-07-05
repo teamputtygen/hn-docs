@@ -12,8 +12,6 @@ then how to ensure that everything is working correctly.
 
    activation
    configuration
-   verify-clouds
-   verify-onedata
    applications
 
 
