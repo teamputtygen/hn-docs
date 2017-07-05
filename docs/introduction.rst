@@ -1,18 +1,20 @@
 Introduction
 ============
 
-Platform Features
------------------
+HNSciCloud
+----------
 
 Ten of Europe’s leading public research organisations launched the
-Helix Nebula Science Cloud (HNSciCloud) Pre-Commercial Procurement to
-establish a European hybrid cloud platform that will support the
-high-performance, data-intensive scientific use-cases of this “Buyers
-Group” and of the research sector at large. It calls for the design
-and implementation of hybrid innovative Infrastructure as a Service
-(IaaS) solutions for compute, storage, network connectivity, Federated
-Identity Management and Service Payment Models, to augment & enhance
-the science community’s existing systems.
+Helix Nebula Science Cloud (HNSciCloud) Pre-Commercial Procurement
+(PCP) to establish a European hybrid cloud platform that will support
+the high-performance, data-intensive scientific use-cases of this
+“Buyers Group” and of the research sector at large.
+
+This PCP calls for the design and implementation of hybrid innovative
+Infrastructure as a Service (IaaS) solutions for compute, storage,
+network connectivity, Federated Identity Management and Service
+Payment Models, to augment and to enhance the science community’s
+existing systems.
 
 The RHEA Group consortium’s HNSciCloud design builds on a solid
 foundation of engineering expertise, existing open source software &
@@ -36,56 +38,23 @@ infrastructure, including:
   billing
 - Authentication from user to cloud providers
 
-The Phase 1 design meets the buyers group’s needs using proven
-technology and will be further refined and prototyped in
-Phase 2. Phase 3 will demonstrate capabilities at scale with 20,000
-cores, but even this could be only ~5% of the Buyers Group’s future
-needs, so the technical solution, service delivery, business processes
-and governance mechanisms must all be designed to scale by a factor
-of 20. New procurement models will be developed providing public
-sector organisations with flexible means to make multi-year
-procurements of cloud-based services, taking full advantage of the
-reliability, flexibility, scalability and increasingly competitive
-pricing that can be offered by commercial providers.
+The Phase 1 design is being implemented, deployed, and tested in Phase
+2, incorporating any refinements necessary to meet the needs of the
+Buyers Group organizations.
 
-Architectural Overview
-----------------------
+Functional Overview
+-------------------
 
 The hybrid cloud platform coming from the design phase provides
 cost-effective access to large-scale compute and storage resources
-from multiple providers. Aside from satisfying the detailed
-requirements of the Buyers Group, our design objectives are to create
-a solution that is:
+from multiple providers.  The solution brings together three
+commercial services, an authentication infrastructure that supports
+federated identities, and a data management infrastructure that can
+handle the large data sets of the Buyers Group. All the components are
+based on open source software released under the Apache 2.0 license,
+which allows liberal academic and commercial reuse.
 
-1. Integrated,
-2. Realistic,
-3. Minimally Intrusive,
-4. Scalable (i.e. ~400’000 cores),
-5. Managed (delivered “as a Service”), and
-6. Sustainable.
-
-The solution brings together three commercial services, an
-authentication infrastructure that supports federated identities, and
-a data management infrastructure that can handle the large data sets
-of the Buyers Group. All the components are based on open source
-software released under the Apache 2.0 license, which allows liberal
-academic and commercial reuse.
-
-As described in D1.2 (Design Phase), the existing components together
-satisfy most requirements of the Buyers Group. Areas where work is
-needed to unify, to enhance, to harden, and to validate the proposed
-solution have been identified during the Design Phase. These "gaps"
-will form the focus of the R&D work of the prototype phase.
-
-.. figure:: images/architecture-overview.png
-   :alt: Support Desk Diagram
-   :width: 50%
-   :align: center
-
-Further, the service will be deployed incrementally, such that scale
-testing can start on stable components as early as possible to detect
-issues and develop solutions to address these.  Our solution includes
-the following main components:
+Our solution includes the following main components:
 
 - Authentication (KeyCloak): federates external identity providers,
   allowing users to use their “home” credentials to access the hybrid
@@ -103,6 +72,11 @@ the following main components:
 - Dashboard (Nuvla): provides an overview of Users’ current
   activities, resource utilisation, and costs.
 
+.. figure:: images/architecture-overview.png
+   :alt: Support Desk Diagram
+   :width: 50%
+   :align: center
+
 The integration of these key components was demonstrated during the
 design phase. The focus of the prototype phase is therefore to close
 the gap on the identified missing features and focus on scaling. To
@@ -112,20 +86,14 @@ Oneprovider service deployed near the source. This will allow users
 from buyer organisations to test their applications, in the clouds, at
 scale, with their own data.
 
-Development during this phase will be incremental, such that we can
-start testing early, to provide buyers with early access to the
-functionality so that they can provide constructive feedback.
-
-
 Actors
 ------
 
 The primary users of the hybrid cloud platform will be researchers who
 want to analyze large datasets. However, there are many other actors
-involved to make the platform useful. To be as exact as possible in
-the component descriptions and in the “user stories” that will drive
-the implementation and testing of the platform, we have identified the
-full set of actors in Table 1.
+involved to make the platform useful. To be as exact as possible when
+describing interactions with the platform, we have identified the full
+set of actors:
 
 Researcher
     A person from a Buyers Group organization who analyzes scientific
@@ -184,4 +152,4 @@ collaboration.  It contains only information specific to the platform
 as a whole.  Documentation for the individual services that comprise
 the platform are available elsewhere and may need to be consulted for
 anything other than simple use cases.  Links to that documentation are
-provided in the "Platform Services" section.
+provided in the :ref:`platform-services` section.

@@ -1,3 +1,5 @@
+.. _platform-services:
+
 Platform Services
 =================
 
