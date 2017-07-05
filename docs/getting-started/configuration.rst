@@ -49,38 +49,47 @@ for creating user accounts.  If you don't have one, then contact your
 account manager.
 
 Once you have your account, you'll have to configure your Nuvla
-account with an access key and secret key.
+account with your credentials.  To find them:
 
-Preparing your OTC account
-^^^^^^^^^^^^^^^^^^^^^^^^^^
+1. Log in to your OTC account.
 
-You must setup a Virtual Private Cloud (VPC) and create a security
-group before trying to start a virtual machine. First, create a new
-security group:
+2. On your home page, click on the "My Credential" link.
 
-1. From the interface, hover over the "Virtual Private Cloud" and
-   click on the "+" sign on the right.
-2. The default values should be correct, click on "Create Now".
-3. You should have a "success" message and then be redirected to the VPC dashboard.
+.. figure:: ../images/otcHome.png
+   :alt: OTC Home Page
+   :width: 100%
+   :align: center
 
-From here, you now need to create a new security group. We'll create
-one that is entirely open.
+3. On the credential page, you can find all of the information that
+   you will need to configure your Nuvla account.  The fields on shown
+   on the figure and listed below.
 
-1. Click on the "Security Groups" box.
-2. Click on the "+ Create Security Group" button.
-3. Choose a name, then click on "OK".
-4. Click on "Modify" next to the new security group in the list.
-5. Click on the new security group to see the details.
-6. Click on "Add Rule".
-7. Open everything to incoming access, use ports 0-65535 and click
-   "OK".
+.. figure:: ../images/otcCredential.png
+   :alt: OTC Credential Page
+   :width: 100%
+   :align: center
 
-Your account should now be ready to start a virtual machine.
+The fields that you need are:
 
-Configuration Nuvla with OTC
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ - User name
+ - Domain ID
+ - Password
+ - Project name
 
-**TBD...**
+Using these values, you can then configure your Nuvla account.
+
+To configure your Nuvla account for OTC, go to your profile page and
+click on "Edit...".  Find the section "open-telekom-de1" and open that
+section. It should look similar to the following figure.
+
+.. figure:: ../images/nuvlaOTCConfiguration.png
+   :alt: Nuvla Configuration for OTC
+   :width: 100%
+   :align: center
+
+Provide the values of the fields from the information on your OTC
+credential page and then save your profile.  You should be able to use
+OTC cloud resources now.
 
 .. _`Remote Machine Access`: http://ssdocs.sixsq.com/en/latest/tutorials/ss/appendix.html#remote-machine-access
 

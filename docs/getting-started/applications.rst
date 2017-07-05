@@ -24,3 +24,4 @@ Within the Nuvla Workspace, there are other applications of interest:
 Other application definitions will appear over time.  If you have
 specific needs, contact SixSq support to request new ones.
 
+.. _`Nuvla App Store`:  https://nuv.la/appstore
