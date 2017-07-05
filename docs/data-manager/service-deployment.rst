@@ -2,7 +2,7 @@
 Deploying Data Management Services
 ==================================
 
-Data management service are based on Onedata technology. For general
+Data management services are based on Onedata technology. For general
 overview of Onedata and it's core concepts including zones, providers
 and spaces please refer to the `official documentation
 <https://onedata.org/#/home/documentation/doc/getting_started/what_is_onedata.html>`_.
@@ -83,6 +83,20 @@ can be found on the Nuvla deployment that provisioned the service under
 .. image:: images/onezone-admin-creds.png
    :scale: 75 %
    :align: center
+
+.. note::
+
+  In case you need to re-deploy the Onezone instance you will have to remove
+  `OneZoneClient` in https://fed-id.nuv.la that was automatically created for
+  the previous instance of Onezone.  For that
+
+  1. Login to your realm on https://fed-id.nuv.la.
+  2. Go to Clients
+  3. Click on `Delete` button on the row with `OneZoneClient` client
+
+  After that you should be ready to re-deploy Onezone.  Don't forget to
+  generate a new access token in Realm Settings -> Client Registration ->
+  Initial Access Tokens.
 
 GlusterFS cluster deployment from Nuvla
 ---------------------------------------
