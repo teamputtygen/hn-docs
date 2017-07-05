@@ -44,7 +44,7 @@ The following steps are required to get the data access token
 .. image:: /images/onezone-login.png
 .
 
- * when loged in Onezone web user interface, press `Access Tokens` in the top
+ * when logged in Onezone web user interface, press `Access Tokens` in the top
    menu and press `Create new access token` button, then click on the `copy`
    pictogram
 
