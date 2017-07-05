@@ -42,22 +42,22 @@ eduGAIN and ELIXIR AAI (using SAML2.0).
    :align: center
 
 4. For both eduGAIN and ELIXIR, users will then be presented with a
-   comprehensive list of IdPs and a search field.
+   comprehensive list of identity providers and a search field.
 
 eduGAIN:
 
 .. image:: ../images/edugain.png
-   :alt: List of IdPs in eduGAIN
+   :alt: List of identity providers in eduGAIN
    :align: center
 
 ELIXIR:
 
 .. image:: ../images/elixir.png
-   :alt: List of IdPs in ELIXIR
+   :alt: List of identity providers in ELIXIR
    :align: center
 
-Upon selection of the IdP, users will be redirected to their
-institute's login page.
+Upon selection of the identity provider, users will be redirected to
+their institute's login page.
 
 5. When successfully authenticating with the identity provider, the
    user will then be redirected back to Nuvla, which will show the
