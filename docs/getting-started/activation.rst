@@ -89,7 +89,7 @@ their institute's login page.
    where the account managers can then manage users, groups and roles
    (as described in `here`_).
 
-10. **All other users** must contact the account manager for the realm
+10. All **OTHER USERS** must contact the account manager for the realm
     so that the manager can assign roles to them or add them to a
     group.
 
