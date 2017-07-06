@@ -142,7 +142,7 @@ its management.
     * find another one!
 
 .. note::
-    
+
     After the deployment of the cluster you should copy value of the `localip`
     parameter of node.1 (`node.1:localip`).  It will be required when
     configuring the backend on the Oneprovider. When scaling down the cluster,
@@ -151,8 +151,9 @@ its management.
 Oneprovider
 -----------
 
-According to the platform deployment model, data manager should deploy one
-Oneprovider instance per Cloud (i.e., one in OTC and one in Exoscale).
+According to the platform deployment model, data manager should deploy two
+Oneprovider instances per Cloud (i.e., two in OTC and two in Exoscale).  This
+is to separately support S3 and GlusterFS storage types.
 
 **Oneprovider on Cloud via Nuvla**
 
