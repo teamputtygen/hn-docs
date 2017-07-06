@@ -102,11 +102,12 @@ GlusterFS cluster deployment from Nuvla
 ---------------------------------------
 
 According to the platform architecture, Buyers are expected to be running
-GlusterFS based cluster on the Clouds.  It is advised to deploy the respective
-clusters in advance before deploying Oneproviders on the Clouds.
+`GlusterFS <https://www.gluster.org/>`_ based cluster on the Clouds.  It is
+advised to deploy the respective clusters in advance before deploying
+Oneproviders on the Clouds.
 
 The GlusterFS application deployment can found Nuvla under
-https://nuv.la/module/HNSciCloud-RHEA/GlusterFS/glusterfs-cluster
+https://nuv.la/module/HNSciCloud-RHEA/Glusterfs/gluster-cluster
 
 .. image:: images/gluster-deploy.png
 
@@ -118,7 +119,10 @@ information on scalable applications in Nuvla can be found under
 http://ssdocs.sixsq.com/en/latest/tutorials/ss/scalable-applications.html.
 Data manager should only be concerted with scaling up/down of the provisioned
 GlusterFS cluster.  All the scalability workflow hooks for actually scaling the
-cluster are already in place the components definitions.
+cluster are already in place in the components definitions.  At the same time,
+please consult `GlusterFS on-line documentation
+<https://gluster.readthedocs.io>`_ for actual data migration between the
+bricks, rebalancing cluster etc. before you shrink or expand your cluster.
 
 After that select **Cloud** - `exoscale-ch-gva` or `open-telekom-de1`.
 Finally, click on `Deploy Application`.
@@ -136,6 +140,13 @@ its management.
     * https://github.com/aravindavk/glusterfs-web doesn't work out-of-the-box and
       it's not for production.
     * find another one!
+
+.. note::
+    
+    After the deployment of the cluster you should copy value of the `localip`
+    parameter of node.1 (`node.1:localip`).  It will be required when
+    configuring the backend on the Oneprovider. When scaling down the cluster,
+    don't delete `node.1`.
 
 Oneprovider
 -----------
