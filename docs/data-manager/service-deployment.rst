@@ -148,6 +148,12 @@ its management.
     configuring the backend on the Oneprovider. When scaling down the cluster,
     don't delete `node.1`.
 
+Depending on the GlusterFS cluster usage strategies by the Buyer Groups the
+project can later create deployments of different types to cover data
+replication for redundancy and/or throughput.  For the options available see
+the documentation on `GlusterFS architecture
+<https://gluster.readthedocs.io/en/latest/Quick-Start-Guide/Architecture/>`_
+
 Oneprovider
 -----------
 
