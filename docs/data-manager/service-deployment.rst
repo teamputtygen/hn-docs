@@ -161,6 +161,10 @@ According to the platform deployment model, data manager should deploy two
 Oneprovider instances per Cloud (i.e., two in OTC and two in Exoscale).  This
 is to separately support S3 and GlusterFS storage types.
 
+.. image:: images/dm-infra.png
+   :scale: 75 %
+   :align: center
+
 **Oneprovider on Cloud via Nuvla**
 
 After startup, Oneprovider service needs to register with Onezone instance.
