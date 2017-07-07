@@ -20,8 +20,8 @@ properly configure the service.  The required parameters are related to the
 connection of the Onezone with the project's Federated Identity Provider
 (FedIdP) service located at https://fed-id.nuv.la.  It is assumed that the data
 manager has access to the Buyer's Group realm in the FedIdP service (see `here
-</getting-started/index>`) to obtain values for the following required Onezone
-deployment parameters:
+<../getting-started/index.html>`_) to obtain values for the following required
+Onezone deployment parameters:
 
 .. image:: images/onezone-params-on-nuvla.png
    :alt: Onezone deployment parameters
