@@ -61,6 +61,13 @@ Obtaining Oneprovider endpoint
 Check with your Data Manger for the IP/DNS name of the Oneprovider endpoint on
 the Cloud of your choice.
 
+Oneprovider IP can also be easily copied from the Onezone 'world' view by
+clicking on the icon of selected Oneprovider instance and pressing `copy` button
+in the top right corner of the popup:
+
+.. image:: images/onezone-provider-ip.png
+
+
 Provision VM for data access
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
