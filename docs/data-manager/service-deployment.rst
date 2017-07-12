@@ -14,7 +14,7 @@ Onezone
 
 Data managers are provided a possibility to automatically deploy Onezone
 service for their Buyer Group via Nuvla.  The Onezone component definition can
-be found under https://nuv.la/module/HNSciCloud-RHEA/onedata/onezone.  To
+be found under https://nuv.la/module/HNSciCloud/onedata/onezone.  To
 deploy Onezone component one needs to provide a number of input parameters to
 properly configure the service.  The required parameters are related to the
 connection of the Onezone with the project's Federated Identity Provider
@@ -107,7 +107,7 @@ advised to deploy the respective clusters in advance before deploying
 Oneproviders on the Clouds.
 
 The GlusterFS application deployment can found Nuvla under
-https://nuv.la/module/HNSciCloud-RHEA/Glusterfs/gluster-cluster
+https://nuv.la/module/HNSciCloud/GlusterFS/gluster-cluster
 
 .. image:: images/gluster-deploy.png
 
@@ -171,7 +171,7 @@ After startup, Oneprovider service needs to register with Onezone instance.
 This is the reason why it should be deployed after deployment of Onezone.
 
 On Nuvla, Oneprovider component definition can be found under
-https://nuv.la/module/HNSciCloud-RHEA/onedata/oneprovider.  Below is the
+https://nuv.la/module/HNSciCloud/onedata/oneprovider.  Below is the
 component deployment dialog after clicking on **Deploy** in the component
 definition.
 
@@ -264,7 +264,7 @@ One-click Deployment of Onezone and Oneproviders on Exoscale and OTC
 
 Data manager has an option to deploy Onezone and Oneproviders on Exoscale and
 OTC with one button click using the following application deployment definition
-https://nuv.la/module/HNSciCloud-RHEA/onedata/onedata.
+https://nuv.la/module/HNSciCloud/onedata/onedata.
 
 .. image:: images/onedata-deployment.png
 

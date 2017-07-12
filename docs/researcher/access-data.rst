@@ -23,7 +23,7 @@ VMs via mounting the required data sources with the help of `Oneclient tool
 <https://onedata.org/#/home/documentation/doc/using_onedata/oneclient.html>`_.
 When deploying VMs via `Nuvla <https://nuv.la>`_ service, users should use or,
 when building their own components, inherit from `oneclient-<OS>` components,
-which are available at https://nuv.la/module/HNSciCloud-RHEA/onedata.
+which are available at https://nuv.la/module/HNSciCloud/onedata.
 
 At the moment, for `oneclinet` to mount the data volumes on VMs and enable
 POSIX access to the data, users need to provide it with a data access token and
@@ -72,7 +72,7 @@ Provision VM for data access
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Here it is explained on the example of CentOS 7 image.  Go to
-https://nuv.la/module/HNSciCloud-RHEA/onedata/oneclient-centos7 and click on
+https://nuv.la/module/HNSciCloud/onedata/oneclient-centos7 and click on
 `Deploy`.
 
 .. image:: images/oneclient-deploy.png
