@@ -15,9 +15,9 @@ your institutional credentials is as follows:
    :alt: Nuvla sign in/up page
    :align: center
 
-2. On this page, HNSciCloud users shall select *"Sign In with OIDC"*
-   (which stands for OpenID Connect) and select their realm (or
-   tenant), as shown in the figure below.
+2. On this page, HNSciCloud users shall select *"HNSciCloud Federated
+   Login"* and select their realm (or tenant), as shown in the figure
+   below.
 
 .. image:: ../images/nuvlaLoginMethods.png
    :alt: Nuvla login methods page
