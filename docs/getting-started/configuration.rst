@@ -39,7 +39,7 @@ for you, when you initially contacted SixSq support or your realm
 administrator.  If this is not the case but you have your Exoscale
 credentials, you can follow the `Exoscale Cloud Configuration`_
 instructions.  If you do not have credentials, contact the SixSq
-support. 
+support.
 
 Open Telekom Cloud
 ~~~~~~~~~~~~~~~~~~
@@ -72,7 +72,7 @@ account with your credentials.  To find them:
 The fields that you need are:
 
  - User name
- - Domain ID
+ - Domain Name
  - Password
  - Project name
 
@@ -94,4 +94,3 @@ OTC cloud resources now.
 .. _`Remote Machine Access`: http://ssdocs.sixsq.com/en/latest/tutorials/ss/appendix.html#remote-machine-access
 
 .. _`Exoscale Cloud Configuration`: http://ssdocs.sixsq.com/en/latest/tutorials/ss/prerequisites.html#exoscale
-
