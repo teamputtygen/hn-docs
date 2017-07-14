@@ -61,7 +61,9 @@ their institute's login page.
 
 5. When successfully authenticating with the identity provider, the
    user will then be redirected back to Nuvla, which will show the
-   active session parameters, including the user's full username.
+   active session parameters, including the user's full username and
+   roles.  `This page <https://nuv.la/authn/login>`_ can be viewed at
+   anytime to show this information.
 
 .. image:: ../images/nuvlaSessionInfo.png
    :alt: User's session information
