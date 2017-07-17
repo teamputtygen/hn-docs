@@ -231,6 +231,14 @@ different configuration options must be specified:
 
 **GlusterFS Oneprovider on cloud via Nuvla**
 
+ * **Volume name** - set it to the value of `volume-name` that was provided
+   when deploying GlusterFS cluster.
+ * **Volume Server host** - IP address of the GlusterFS cluster.  Please set it
+   to the value from `node.1:localip` runtime parameter in the GlusterFS
+   deployment.
+ * **Insecure** - this option `must be selected`.  It enables the direct client
+   access to the GlusterFS cluster.
+
 .. image:: images/gluster-storage.png
 
 **Oneprovider in BG organization via Nuvla**
