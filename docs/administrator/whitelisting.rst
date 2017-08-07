@@ -25,7 +25,7 @@ Allowing an External User
 
 In cases where the account manager wants to restrict the login process to a set of known users coming from either eduGAIN or ELIXIR, he/she needs to enable the whitelisting capability in the authentication flows in Keycloak:
 
-.. image:: ../images/kc-enableWhitelist.png
+.. image:: ../images/kc-requireWhitelist.png
    :alt: Enable whitelisting
    :align: center
 
@@ -37,7 +37,7 @@ Once enabled, account managers can add users to their whitelist in a similar way
 2. select in which federation should the user be blacklisted
 3. click on *Config* from the *whitelist* script.
 
-.. image:: ../images/kc-requireWhitelist.png
+.. image:: ../images/kc-configureWhitelist.png
    :alt: Config whitelist
    :align: center
 
