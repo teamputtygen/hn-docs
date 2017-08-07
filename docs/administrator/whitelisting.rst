@@ -37,7 +37,7 @@ Once enabled, account managers can add users to their whitelist in a similar way
 2. select in which federation should the user be blacklisted
 3. click on *Config* from the *whitelist* script.
 
-.. image:: ../images/kc-configureWhitelist.png
+.. image:: ../images/kc-requireWhitelist.png
    :alt: Config whitelist
    :align: center
 
