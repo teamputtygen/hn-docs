@@ -27,4 +27,5 @@ and login.
    roles
    management-api
    blacklisting
+   whitelisting
    block-new-users
