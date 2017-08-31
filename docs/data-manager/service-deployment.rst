@@ -157,9 +157,10 @@ the documentation on `GlusterFS architecture
 Oneprovider
 -----------
 
-According to the platform deployment model, data manager should deploy two
-Oneprovider instances per Cloud (i.e., two in OTC and two in Exoscale).  This
-is to separately support S3 and GlusterFS storage types.
+According to the platform deployment model, the data manager must
+deploy at least one Oneprovider instance per Cloud (i.e., one in OTC
+and one in Exoscale). A single Oneprovider instance can support
+multiple storage backends.
 
 .. image:: images/dm-infra.png
    :scale: 75 %
