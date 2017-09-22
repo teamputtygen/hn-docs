@@ -106,12 +106,12 @@ According to the platform architecture, Buyers are expected to be running
 advised to deploy the respective clusters in advance before deploying
 Oneproviders on the Clouds.
 
-The GlusterFS application deployment can found Nuvla under
+The GlusterFS application deployment can be found Nuvla under
 https://nuv.la/module/HNSciCloud/GlusterFS/gluster-cluster
 
 .. image:: images/gluster-deploy.png
 
-To be able to manage the capacity of the cluster during its run-time it needs
+To be able to manage the capacity of the cluster during its run-time, it needs
 to be deployed as scalable application.  For that, data manager should select
 **Scalable deployment** option.  Later the number of cluster nodes can be
 managed by adding and removing them via API / `ss-node-{add,remove}` CLI.  More
@@ -124,7 +124,7 @@ please consult `GlusterFS on-line documentation
 <https://gluster.readthedocs.io>`_ for actual data migration between the
 bricks, rebalancing cluster etc. before you shrink or expand your cluster.
 
-After that select **Cloud** - `exoscale-ch-gva` or `open-telekom-de1`.
+After that, select **Cloud** - `exoscale-ch-gva` or `open-telekom-de1`.
 Finally, click on `Deploy Application`.
 
 We are looking for an appropriate web GUI for monitoring and management of
