@@ -1,6 +1,8 @@
 Manage Groups
 =============
 
+*To simplify, groups are to be considered the same as sub-tenants, as they provide the required isolation level.*
+
 Groups can be managed through the Keycloak's UI within `SixSq's Federated Identity Portal`_.
 
 Upon registration in Nuvla, account managers will be given (if requested) *admin* privileges in their respective tenant. Tenant account managers belong to the **admin** group in Keycloak, and have full management privileges within that realm.
