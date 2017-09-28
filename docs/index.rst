@@ -13,6 +13,7 @@ Document ID: **D-PRO-2.2-DOCS**
    researcher/index.rst
    administrator/index.rst
    data-manager/index.rst
+   faq/index.rst
    support.rst
    service-docs.rst
    consortium.rst
