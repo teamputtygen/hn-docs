@@ -11,3 +11,7 @@ restructured text as used by
 You can browse the [**rendered
 documentation**](http://hn-prototype-docs.readthedocs.io/en/latest/) 
 on [ReadTheDocs.org](https://readthedocs.org).
+
+You can build the documentation locally by checking out this
+repository and running the command `make html`.  The root of the
+generated documentation will appear in `build/html/index.html`.
