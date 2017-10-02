@@ -59,4 +59,17 @@ files) and basic statistics on the scan process will be displayed.
 .. image:: images/import-legacy-data-monitoring.png
 
 For more details, check the `official documentation
-<https://beta.onedata.org/#/home/documentation/doc/administering_onedata/oneprovider_tutorial[add-storage-with-existing-data].html>`_
+<https://onedata.org/#/home/documentation/doc/administering_onedata/oneprovider_tutorial[add-storage-with-existing-data].html>`_.
+
+Onedatify
+~~~~~~~~~
+
+Provisioning of legacy data using Onedata can be achieved in an easy way using
+a script called Onedatify, which automates the process of installing and
+configuring a Oneprovider instances, setting up the specified storage resources
+and automatically synchronizing the storage contents which are made immediately
+available via Onedata. Usage instructions are available
+`here <https://onedata.org/#/home/documentation/doc/administering_onedata/onedatify.html>`_.
+
+
+
