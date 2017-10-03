@@ -49,11 +49,11 @@ reset function.
 
 1. Log into Nuvla normally with your eduGAIN or Elixir AAI identity
 provider.
-   
+
 2. After logging in, capture your full username from your profile page.
 You will need the **complete** username.
 
-.. figure:: ../images/api-key-profile.png            
+.. figure:: ../images/api-key-profile.png
    :alt: User Profile Link
    :width: 100%
    :align: center
@@ -65,11 +65,11 @@ shown in the screenshot below:
    :alt: Reset Password Link
    :width: 100%
    :align: center
-           
+
 4. Provide your complete username in the password dialog.  This will send
 a confirmation email to your address.
 
-.. figure:: ../images/api-key-reset-dialog.png            
+.. figure:: ../images/api-key-reset-dialog.png
    :alt: Reset Password Dialog
    :width: 100%
    :align: center
@@ -128,7 +128,7 @@ To actually create the new credential:
       "message" : "created credential/05797630-c1e2-488b-96cd-2e44acc8e286",
       "resource-id" : "credential/05797630-c1e2-488b-96cd-2e44acc8e286",
       "secretKey" : "..."
-    } 
+    }
 
 
 Note carefully the secret (secretKey) that is returned from the
@@ -141,8 +141,8 @@ Using the API Key/Secret
 
 You can use the API key/secret to log in via the `REST API
 <http://ssapi.sixsq.com/#session-(cimi)>`_, `Python API
-<https://slipstream.github.io/SlipStreamPythonAPI/>`_, and `Clojure
-API <http://slipstream.github.io/SlipStreamClojureAPI/>`_.
+<https://slipstream.github.io/SlipStreamPythonAPI/>`_, `Clojure
+API <http://slipstream.github.io/SlipStreamClojureAPI/>`_, and `Libcloud driver <https://slipstream.github.io/slipstream-libcloud-driver/>`_.
 
 
 Revoking an API Key/Secret
@@ -162,4 +162,4 @@ Once the credential is deleted/revoked, it can no longer be used to
 authenticate with Nuvla.
 
 
-.. _cURL: http://ssdocs.sixsq.com/en/latest/tutorials/ss/automating-slipstream.html#curl 
+.. _cURL: http://ssdocs.sixsq.com/en/latest/tutorials/ss/automating-slipstream.html#curl

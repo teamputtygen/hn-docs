@@ -10,6 +10,7 @@ Nuvla (SlipStream)
 - `General Nuvla Information <http://sixsq.com/services/nuvla>`_
 - `SlipStream User Documentation <http://ssdocs.sixsq.com>`_
 - `SlipStream API Documentation <http://ssapi.sixsq.com>`_
+- `SlipStream Libcloud Driver Documentation <https://slipstream.github.io/slipstream-libcloud-driver/>`_
 
 Onedata
 -------
@@ -22,7 +23,7 @@ Onedata
 Keycloak
 --------
 
-- `Keycloak Portal <https://fed-id.nuv.la>`_ 
+- `Keycloak Portal <https://fed-id.nuv.la>`_
 - `General Keycloak Information <http://www.keycloak.org>`_
 - `Keycloak Documentation <http://www.keycloak.org/documentation.html>`_
 
