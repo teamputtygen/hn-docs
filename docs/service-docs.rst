@@ -10,6 +10,8 @@ Nuvla (SlipStream)
 - `General Nuvla Information <http://sixsq.com/services/nuvla>`_
 - `SlipStream User Documentation <http://ssdocs.sixsq.com>`_
 - `SlipStream API Documentation <http://ssapi.sixsq.com>`_
+- `SlipStream Python API <https://slipstream.github.io/SlipStreamPythonAPI/>`_
+- `SlipStream Clojure API <http://slipstream.github.io/SlipStreamClojureAPI/>`_
 - `SlipStream Libcloud Driver Documentation <https://slipstream.github.io/slipstream-libcloud-driver/>`_
 
 Onedata
