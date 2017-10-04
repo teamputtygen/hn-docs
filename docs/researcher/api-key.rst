@@ -36,9 +36,7 @@ after an API key/secret has been revoked, there is a window of time
 where active session cookies will still allow access.  **The maximum
 lifetime of a session cookie is fixed at 24 hours.**
 
-Currently the browser interface does not support generation of API
-key/secret pairs.  To work around this limitation, the API key/secret
-pairs can generated from the command line.
+.. note:: Currently the browser interface does not support generation of API key/secret pairs.  To work around this limitation, the API key/secret pairs can generated from the command line.
 
 Enabling Account Password
 -------------------------

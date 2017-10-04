@@ -9,7 +9,13 @@ services make up of one or more components.
 To ensure that the components and applications are portable,
 SlipStream uses an application model that described customized images
 as a set of deltas (recipes) that describe the changes from "native
-images".  The native images are minimal operating system images that
+images".  
+
+In other words, components define a template, including resources
+characteristics such as default CPU, RAM and disk.  They also define recipes
+(aka scripts) that are executed as part of the deployment, to transform
+the image into a fully configured VM.
+The native images are normally minimal operating system images that
 are have consistent behavior across clouds.
 
 The SlipStream tutorial contains an `extensive section`_ on how to create

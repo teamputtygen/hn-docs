@@ -20,8 +20,8 @@ the link!).
  - Choose the cloud you want to use, and
  - Wait for the virtual machine to start.
 
-Once the machine is ready, you can then log into the machine via SSH
-via the Service URL link or manually.  Once you are on the machine,
+Once the machine is ready, you can log into the machine via SSH
+using the Service URL link or manually.  Once you are on the machine,
 you can then use Docker and Docker Compose as you normally would.
 
 For example, a simple "Hello World" example:
@@ -41,10 +41,10 @@ For example, a simple "Hello World" example:
     ... 
 
 This will show you a message and indicate that the installation is
-working correctly.  It also will provide some pointers for doing more
+working correctly.  It will also provide some pointers for doing more
 complicated (and useful) tasks.
 
-You can also try something similar from the `Docker Compose Getting
+For example, you can try something similar from the `Docker Compose Getting
 Started`_ page. Following the instructions there, you can deploy a
 simple web application that provides a welcome message with a counter
 of how many times it has been loaded.
@@ -66,10 +66,7 @@ of how many times it has been loaded.
     web_1    |  * Debugger is active!
     web_1    |  * Debugger PIN: 241-972-540
 
-Note that instead of using ``localhost`` or ``0.0.0.0``, you will need
-to use the **IP address of the virtual machine** (with the 5000 port!)
-from your remote browser.  If everything worked correctly, you should
-see a message like "Hello World! I have been seen 2 times.".
+.. note:: Instead of using ``localhost`` or ``0.0.0.0``, you will need to use the **IP address of the virtual machine** (with the 5000 port!) from your remote browser.  If everything worked correctly, you should see a message like "Hello World! I have been seen 2 times.".
 
 From here you might want to look at the entries :ref:`docker-swarm` or
 :ref:`kubernetes-cluster`.

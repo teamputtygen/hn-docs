@@ -2,9 +2,11 @@
 Binary VM Images
 ================
 
-Uploading of binary VM images is strongly discouraged.  Use of the
+Uploading of binary VM images is strongly discouraged.  Instead, use of the
 Nuvla features for creating `portable recipes`_ (optionally with the
 `build feature`_) or the use of containers are preferred solutions.
+
+.. note:: From experience, **native base images provided by cloud providers are optimised for their cloud**. They tend to boot faster, are smaller and ultimately are more performant.  Custom binary images tend to under perform compared to native images, and generally require adjustments, which can be time consuming.
 
 Open Telkom Cloud (OTC)
 -----------------------

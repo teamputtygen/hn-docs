@@ -25,7 +25,7 @@ Users can submit support tickets via:
 
 A knowledge base is integrated into the Freshdesk system. A `dedicated
 section of the knowledge base
-<http://support.sixsq.com/solution/categories/12000002171>`_ will be
+<http://support.sixsq.com/solution/categories/12000002171>`_ is
 maintained for HNSciCloud.
 
 The consortium provides 8x5 support with a 1-hour response time. Users

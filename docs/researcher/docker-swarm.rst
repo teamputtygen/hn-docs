@@ -3,12 +3,12 @@
 Deploy Docker Swarm
 ===================
 
-Running Docker in "Swarm" mode allows you to deploy and control a
+Running Docker in "`Swarm`_" mode allows you to deploy and control a
 cluster of machines running the Docker Engine. The Docker Swarm
 component in Nuvla_ automates the installation, configuration, and
 deployment of a swarm.
 
-The `Docker Swarm`_ component can be found in the WorkSpace or App
+The `Docker Swarm component`_ can be found in the WorkSpace or App
 Store on Nuvla (or by clicking the link!).  After finding the
 component, you can deploy a swarm by:
 
@@ -89,12 +89,14 @@ inspect and remove the services as follows:
     $ docker service rm gzhyxwm0jp4d
     gzhyxwm0jp4d
 
-See the Docker Swarm documentation for scaling and other management
+See the Docker `Swarm`_ documentation for scaling and other management
 actions for your Docker applications.
 
 .. _Nuvla: https://nuv.la
 
-.. _`Docker Swarm`: https://docs.docker.com/engine/swarm/
+.. _`Swarm`: https://docs.docker.com/engine/swarm/
+
+.. _`Docker Swarm component`: https://nuv.la/module/apps/Containers/docker-swarm/swarm
 
 .. _scalable: http://ssdocs.sixsq.com/en/latest/tutorials/ss/module-4.html
 

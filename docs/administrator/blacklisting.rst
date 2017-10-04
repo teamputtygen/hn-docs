@@ -75,9 +75,7 @@ This will open a script where account managers can then find a global variable (
 
 Then just click **Save**, and that's it. For any other users to be blocked, the procedure is the same, just appending their username to the list above.
 
----
-
-**IMPORTANT NOTE**: blocking a user does not revoke nor destroy his/her current session. Blocking actions only affect users on their next login.
+.. warning:: Blocking a user does not revoke nor destroy his/her current session. Blocking actions only affect users on their next login.
 
 
 .. _`Manage Groups`: ../groups.html

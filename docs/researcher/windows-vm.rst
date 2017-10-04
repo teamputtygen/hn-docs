@@ -1,7 +1,7 @@
 Start a Windows VM
 ==================
 
-The main interface for managing deployments is Nuvla_.  The procedure
+The main interface for managing deployments is Nuvla_.  Deploying Windows VMs
 is straightforward and the same as for Linux VMs:
 
  - Navigate to the component/image you want to deploy,

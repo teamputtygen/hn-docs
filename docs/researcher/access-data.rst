@@ -12,8 +12,8 @@ Onezone, with the latter being the main entry point and enabling the global
 authentication and metadata management.
 
 At this time, it is assumed that the distributed Onedata infrastructure is
-already deployed by the Buyer's Group Data Managers and the endpoints of
-Onezone and Oneproviders are publicly available.
+already deployed by the Buyer's Group :ref:`data-coordinator` and the endpoints of
+Onezone and Oneproviders are available.
 
 Using Nuvla to provision data access client
 -------------------------------------------
@@ -80,7 +80,7 @@ https://nuv.la/module/HNSciCloud/onedata/oneclient-centos7 and click on
 Select the Cloud on which you want to deploy the client via `Cloud` drop-down.
 Provide **access-token** and **provider-hostname** parameters.   Optionally
 change the default mount point of the spaces in **mount-point** parameter.
-Then, click `Deploy Application Compnent` button.
+Then, click `Deploy Application Component` button.
 
 Accessing data on VM
 --------------------

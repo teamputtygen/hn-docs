@@ -89,7 +89,7 @@ Afterwards, you can run the command:
     $ kubectl delete pod nginx
     pod "nginx" deleted
 
-to clean up the deployment.
+to remove the nginx deployment from the cluster.
 
 
 .. _Nuvla: https://nuv.la

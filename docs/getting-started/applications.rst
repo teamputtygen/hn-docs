@@ -16,7 +16,7 @@ Within the `Nuvla Workspace`_, there are other applications of interest:
    systems. Usually used as the basis for other components.
  - ``apps``: Curated list of applications that can be used as examples
    for your own applications.
- - ``HNSciCloud``: `This`_ workspace contains several prearranged components and applications to facilitate the testing and evaluation process.
+ - ``HNSciCloud``: `This`_ workspace contains several prearranged components and applications to facilitate the testing and evaluation process, including for example:
 
     - ``HNSciCloud/Benchmarking``: Both generic and HNSciCloud-specific benchmarks for evaluating the system. Relevant for Test Cases 2.2, 5.1 and 11.4.3.
     - ``HNSciCloud/Images``: A subset of ``examples/images``, containing only the HNSciCloud specific operating systems.

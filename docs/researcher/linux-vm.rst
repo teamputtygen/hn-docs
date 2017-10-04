@@ -2,7 +2,7 @@ Start a Linux VM
 ================
 
 The main interface for managing virtual machine deployments is
-Nuvla_.  In general, the procedure is straightforward:
+Nuvla_.  The procedure to deploy standard Linux-based VMs is straightforward:
 
  - Navigate to the component/image you want to deploy,
  - Click on the "deploy" button,
