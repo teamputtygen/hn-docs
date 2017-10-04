@@ -14,9 +14,12 @@ by researchers.
    docker-compose
    docker-swarm
    kubernetes-cluster
+   monitoring
+   accounting
+   quota
    access-data
    create-applications
-   binary-images   
+   binary-images
    api-key
 
 
