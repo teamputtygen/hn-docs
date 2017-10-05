@@ -30,7 +30,7 @@ The REST resource providing this functionality is called *virtual-machine* and c
 be used, for example, to query the following information:
 
  * Count all virtual machines
- * Count all virtual belonging to a give user (requires privileged rights)
+ * Count all virtual machines belonging to a give user (requires privileged rights)
  * Count all virtual machines launched directly with the cloud, by-passing Nuvla
  * Simulate what virtual machines a given user sees (requires privileged rights) 
  * Group currently running virtual machines, by billing period (e.g. billed by minute vs hour)
