@@ -25,6 +25,7 @@ and login.
 
    groups
    roles
+   quota
    management-api
    blacklisting
    whitelisting
