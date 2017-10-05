@@ -3,7 +3,7 @@
 Quota
 =====
 
-Nuvla protects users from over use, by applying a quota mechanism.  Users can query
+Nuvla protects users from overuse, by applying a quota mechanism.  Users can query
 their quota and request increases to their group or organisation managers.
 
 When deploying new resources, Nuvla checks if the requested deployment will see the
