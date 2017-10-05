@@ -80,8 +80,8 @@ the server via the command line using the `ss-curl` alias.  Details on how to se
 `ss-curl` alias can be found in the `SlipStream documentation
 <http://ssdocs.sixsq.com/en/latest/tutorials/ss/automating-slipstream.html#ss-curl-login>`_.
 
-.. note:: Be sure to setup the `ss-curl` alias.  See the SlipStream cURL_
-documentation for setting up the correct alias.
+.. note:: Be sure to setup the `ss-curl` alias.  See the SlipStream
+          cURL_ documentation for setting up the correct alias.
 
 With all that completed, you can now create an API key/secret.
 
