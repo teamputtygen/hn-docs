@@ -5,28 +5,26 @@ Benchmark
 
 Nuvla provides a benchmarking infrastructure, which can be used by any authenticated user.
 
-The benchmark entries themselves complies with an open scheme where users can publish benchmark data
-in a consistent and flexible way. This includes defining their own namespace, such that all benchmarks can be managed
-together, in a coordinated way.
+The benchmark entries themselves comply with an open schema where users can publish benchmarking data
+in a consistent and flexible way. The published benchmark record requires an associated Service Offer attribute, where all the instance's resources are described, and a Credentials attribute, associated with the user running/publishing the benchmark. The remaining message attributes are optional, letting users publish any sort of metrics as long as they belong to a predefined namespace (as described in the official `SlipStream API Documentation`_).
 
-The benchmark can then be used to select best clouds and service offers.
+The benchmarks can then be used to select the best performing clouds and service offers over time, continuously. 
 
 To illustrate this feature and build our own knowledge base, we publish benchmarks resulting from our continuous
-monitoring system. The following clouds are currently covered, and we will expand this coverage to more clouds already
-configured on the Nuvla service:
+monitoring system. The following clouds are currently covered, and we will expand this coverage to more clouds and service offers already configured on the Nuvla service:
 
  * Open Telekom Cloud (OTC)
  * Exoscale Dietikon
- * Exo Geneva
+ * Exoscale Geneva
   
-The published benchmark is the result of running the *Unixbench* suites to measure CPU performance through *Whetstone* and *Dhrystone*, every few hours.
+The published benchmarks are obtained by running the *`Unixbench`_* suite to measure CPU performance through fast synthetic benchmarks like *Whetstone* and *Dhrystone*, every hours.
 
-The following image is a screen capture from Kibana of the latest 12 hours benchmark for the Exoscale clouds,
+As an example, the following image shows the CPU performances on both Exoscale data centers over a period of 12 hours. In the image it is possible to evaluate the consistency of the CPU performance by plotting the average benchmark scores plus two edge (low and high) percentiles, which provide a general view of the CPU MIPS range. The shorter the range, the more consistent the CPU performance is.
 
 .. image:: images/benchmark-exoscale.png
-
-showing expected results for this type of benchmark.
 
 For more details on the benchmark resource, including usage examples, refer to the `benchmark API documentation`_.
 
 .. _`benchmark API documentation`: http://ssapi.sixsq.com/#benchmark
+.. _`SlipStream API Documentation`: http://ssapi.sixsq.com/#service-attribute-(cimi)
+.. _`Unixbench`: https://github.com/kdlucas/byte-unixbench
