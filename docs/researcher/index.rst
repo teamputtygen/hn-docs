@@ -21,8 +21,4 @@ by researchers.
    create-applications
    binary-images
    api-key
-
-
-
-
-
+   benchmark
