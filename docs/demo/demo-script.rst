@@ -102,7 +102,7 @@ The data management infrastructure has been deployed ahead of time to
 save time.  The deployment for the demo is shown in the following
 figure.
 
-.. figure:: ../images/onedata-deployment.png
+.. image:: ../images/onedata-deployment.png
    :alt: Onedata Deployment
    :width: 80%
    :align: center
@@ -429,7 +429,7 @@ uses OpenMPI over a cluster of compute nodes. The following figure
 shows the deployed components and the primary interactions between
 them.
 
-.. figure:: ../images/fdmnes-layout.png
+.. image:: ../images/fdmnes-layout.png
    :alt: FDMNES Layout Deployment and Interactions
    :width: 80%
    :align: center

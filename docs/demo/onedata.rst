@@ -19,7 +19,7 @@ We will deploy and configure:
 Everything deployed in Exoscale DK is viewed as Buyers Group simulated
 site.
 
-.. figure:: ../images/onedata-deployment.png
+.. image:: ../images/onedata-deployment.png
    :alt: Onedata Deployment
    :width: 80%
    :align: center
