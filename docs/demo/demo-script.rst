@@ -220,7 +220,7 @@ Transparent Data Access (1)
 
 The deployment has a "simulated procurer site" deployed in the DK
 region of Exoscale.  Machines in this site are accessible only via the
-WAN and not via Géant.
+WAN and not via Geant.
 
 The "local" storage of the site is residing in a GlusterFS
 cluster. The machine is located at **159.100.249.39** (alias gfs). The
