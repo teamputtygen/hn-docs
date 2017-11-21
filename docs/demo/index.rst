@@ -2,14 +2,14 @@
 Platform Demo
 =============
 
-This section contains howtos for common tasks that will be carried out
-by researchers.
+This section contains information related to the review demonstration
+at DESY on 9 October 2017.
 
 .. toctree::
    :maxdepth: 1
    :hidden:
 
-   demo
+   demo-script
    onedata
    youtube
    
