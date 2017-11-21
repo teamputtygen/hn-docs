@@ -15,6 +15,7 @@ Document ID: **D-PRO-2.5.1-DOCS**
    data-manager/index.rst
    support.rst
    service-docs.rst
+   demo/index.rst
    consortium.rst
 
 
