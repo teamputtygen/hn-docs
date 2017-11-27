@@ -102,7 +102,7 @@ The data management infrastructure has been deployed ahead of time to
 save time.  The deployment for the demo is shown in the following
 figure.
 
-.. image:: ../images/onedata-deployment.png
+.. image:: ../images/onedata-layout.png
    :alt: Onedata Deployment
    :width: 80%
    :align: center
