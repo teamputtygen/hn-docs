@@ -22,3 +22,5 @@ by researchers.
    binary-images
    api-key
    benchmark
+   hpcaas
+   
