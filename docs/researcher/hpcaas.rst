@@ -76,22 +76,15 @@ Batch System
 
 If you prefer instead to use a proper batch system to handle your HPC
 application, then you can deploy a proper batch system on the cloud.
-An example SlipStream application for a `SLURM cluster`_ is provided.
+An example SlipStream application for a `Torque cluster`_ is provided.
 
-To deploy the application, follow the usual SlipStream procedure,
-clicking on "Deploy..." to start the cluster.  Once the cluster has
-started, you can log into the head node as root.  You can then use the
-usual command ``qsub`` to start your jobs.
+.. warning:: Note that this example is significantly out of date, but
+             provides an example on how to create your own batch
+             system deployment.
 
-Note that the cluster only creates a single unix user for running
-jobs.  If you want to have a multple user system, you'll need to
-create a new Torque deployment, add the required users, and manage
-access for those users to the head node.
-
-Note that the Torque application, as defined, is not a scalable.  That
-means that you cannot change the number of worker nodes dynamically
-after the Torque application starts.  You can also create a new Torque
-application to create a scalable version.
+This example shows how to setup the batch system configuration, create
+users on each node of the cluster, and allow for SSH access between
+nodes. Your batch system may also need to setup a shared file system.
 
 
 .. _Torque: http://www.adaptivecomputing.com/products/open-source/torque/ 
@@ -102,5 +95,5 @@ application to create a scalable version.
 
 .. _ESRF: http://www.esrf.eu/
 
-.. _`SLURM cluster`: https://nuv.la/module/apps/Torque/torque-deployment
+.. _`Torque cluster`: https://nuv.la/module/apps/Torque/torque-deployment
 
