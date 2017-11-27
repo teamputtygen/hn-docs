@@ -58,7 +58,7 @@ the process.
 
 `Logging into Nuvla using the REST API
 <http://ssapi.sixsq.com/#authentication>`_ is covered in the API
-documentation.  For the demo, we'll use a simple script ``login.ch``::
+documentation.  For the demo, we'll use a simple script ``login.sh``::
 
   #!/bin/bash
 
