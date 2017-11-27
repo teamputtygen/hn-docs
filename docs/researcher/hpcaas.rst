@@ -16,16 +16,16 @@ historically have been run on batch systems such as Torque_, SLURM_,
 or HTCondor_.  This job-based focus, however, fundamentally conflicts
 with the virtual machine focus of IaaS cloud infrastructures.
 
-There are two recommended approaches for running HPC applications on
-the HNSciCloud-RHEA hybrid cloud platform:
+There are two approaches for running HPC applications on the
+HNSciCloud-RHEA hybrid cloud platform:
 
  1. Direct use of virtual machines on the hybrid cloud platform to run
     a single MPI-based HPC job on a "raw cluster". 
  2. Deployment of a dedicated batch system within the hybrid cloud
     platform to manage multiple HPC jobs.
 
-Although both approaches have their advantages and disadvantages, the
-first approach is preferred.
+Of the two approaches, the first is strongly preferred because it
+avoids the incidental complexity of managing a batch system.
 
 Raw Cluster
 -----------
@@ -36,22 +36,22 @@ a single job.
 
 The advantages of this approach are:
 
- - The user avoids the administrative overhead in having to deploy and
-   manage a batch cluster.
  - The resources can be tuned precisely to the requirements of the
    calculation.
- - Potentially complex user management can be avoided as this cluster
-   serves a single user and single job. 
+ - The user avoids the administrative overhead in having to deploy and
+   manage a batch cluster.
+ - Questions of authentication and authorization are sidestepped
+   because the deployed cluster serves a single user and single job.
 
-The primary disadvantage comes from the overhead in provisioning the
-resources.  However, most cloud infrastructure can provision all
-resources within a few minutes at most.  Although already small, the
-provisioning overhead is miniscule compared to the hours or days that
-a typical HPC job takes to complete.
+The only apparent disadvantage is the overhead in provisioning the
+resources.  Most cloud infrastructure can now provision all resources
+within a few minutes, so the overheads are already small. Taking into
+account that typical HPC jobs last hours or days, the overhead is
+miniscule in comparison.
 
 An example application has been provided that demonstrates how to
 create a parameterized SlipStream application that creates and uses a
-raw cluster.  The example uses the FDMNES_ application from the
+raw cluster.  The example uses the FDMNES application from the
 European Synchrotron Radiation Facility (ESRF_).
 
 The architecture of the application is shown in the figure below.
@@ -59,30 +59,24 @@ There is a single master node and any number of worker nodes.  The
 application will automatically configure all of the nodes so that the
 "mpiuser" account can control all of the workers nodes via SSH.
 
-.. image:: ../images/fixme.png
-           :scale: 75 %
+.. image:: ../images/fdmnes-layout.png
+           :scale: 80%
            :align: center
            :alt: "Raw Cluster" Application Architecture
                  
 
 The example application will download and install a tarball containing
-the application to be run.  It will then start the application with
-the ``mpirun`` command, wait for the job to complete, and then provide
-the results in the application report, as well as pushing them to the
-Onedata system.
-
-This example application also integrates with Onedata, taking the
-inputs from Onedata and writing the outputs there as well.  This is
-optional and the application could take the program inputs from
-somewhere else and write these to somewhere else. 
-
+the application to be run from a Onedata deployment.  It will then
+start the application with the ``mpirun`` command, wait for the job to
+complete, and then provide the results in the application report, as
+well as pushing them to the Onedata system.
 
 Batch System
 ------------
 
 If you prefer instead to use a proper batch system to handle your HPC
 application, then you can deploy a proper batch system on the cloud.
-An example SlipStream application for a `Torque cluster`_ is provided.
+An example SlipStream application for a `SLURM cluster`_ is provided.
 
 To deploy the application, follow the usual SlipStream procedure,
 clicking on "Deploy..." to start the cluster.  Once the cluster has
@@ -106,9 +100,7 @@ application to create a scalable version.
 
 .. _HTCondor: https://research.cs.wisc.edu/htcondor/ 
 
-.. _FDMNES: FIXME!!!
-
 .. _ESRF: http://www.esrf.eu/
 
-.. _`Torque cluster`: https://nuv.la/module/apps/Torque/torque-deployment
+.. _`SLURM cluster`: https://nuv.la/module/apps/Torque/torque-deployment
 
