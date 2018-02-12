@@ -5,10 +5,11 @@ HNSciCloud
 ----------
 
 Ten of Europe’s leading public research organisations launched the
-Helix Nebula Science Cloud (HNSciCloud) Pre-Commercial Procurement
-(PCP) to establish a European hybrid cloud platform that will support
-the high-performance, data-intensive scientific use-cases of this
-“Buyers Group” and of the research sector at large.
+`Helix Nebula Science Cloud (HNSciCloud) Pre-Commercial Procurement
+(PCP) <http://www.hnscicloud.eu/>`_ to establish a European hybrid
+cloud platform that will support the high-performance, data-intensive
+scientific use-cases of this “Buyers Group” and of the research sector
+at large.
 
 This PCP calls for the design and implementation of hybrid innovative
 Infrastructure as a Service (IaaS) solutions for compute, storage,
@@ -17,14 +18,15 @@ Payment Models, to augment and to enhance the science community’s
 existing systems.
 
 The RHEA Group consortium’s HNSciCloud design builds on a solid
-foundation of engineering expertise, existing open source software &
+foundation of engineering expertise, existing open source software and
 commercial services:
 
 - RHEA System Engineering & Cyber Security expertise
 - SixSq’s Nuvla, a SlipStream-based hybrid-cloud management service
 - Cyfronet’s OneData for Data Management
-- Open Telekom Cloud, T-Systems’ IaaS Cloud Service (OpenStack)
+- Advania's IaaS Cloud Infrastructure (OpenStack)
 - Exoscale IaaS Cloud Service (CloudStack)
+- Open Telekom Cloud, T-Systems’ IaaS Cloud Service (OpenStack)
 
 The R&D innovations will be incorporated into these services as part
 of our commercial offerings, with minimum intrusion into the buyers’
@@ -38,9 +40,9 @@ infrastructure, including:
   billing
 - Authentication from user to cloud providers
 
-The Phase 1 design is being implemented, deployed, and tested in Phase
-2, incorporating any refinements necessary to meet the needs of the
-Buyers Group organizations.
+The Pilot (Phase 3) exercises the Consortium's platform at a larger
+scale and allows for continued evolution of the platform to meet the
+needs of scientific computing.
 
 Functional Overview
 -------------------
@@ -67,7 +69,7 @@ Our solution includes the following main components:
 - Networking (peering with GÉANT): allows access to all the platform
   services from anywhere with enhanced access from sites connected to
   GÉANT
-- Cloud Resources (OTC + Exoscale): IaaS and HPC computing and storage
+- Cloud Resources (Advania, Exoscale, and OTC): IaaS and storage
   services accessible from the hybrid cloud platform
 - Dashboard (Nuvla): provides an overview of Users’ current
   activities, resource utilisation, and costs.
@@ -78,13 +80,8 @@ Our solution includes the following main components:
    :align: center
 
 The integration of these key components was demonstrated during the
-design phase. The focus of the prototype phase is therefore to close
-the gap on the identified missing features and focus on scaling. To
-facilitate testing the system at scale, we will also work with buyers
-to connect their data sources to the data management solution via a
-Oneprovider service deployed near the source. This will allow users
-from buyer organisations to test their applications, in the clouds, at
-scale, with their own data.
+prototype phase.  The pilot phase will concentrate on validating the
+platform at scale.
 
 Actors
 ------
@@ -147,9 +144,9 @@ Scope and Coverage
 ------------------
 
 This documentation covers the essentials for learning about and
-getting started with the HNSciCloud platform from the RHEA
-collaboration.  It contains only information specific to the platform
-as a whole.  Documentation for the individual services that comprise
-the platform are available elsewhere and may need to be consulted for
-anything other than simple use cases.  Links to that documentation are
-provided in the :ref:`platform-services` section.
+getting started with the HNSciCloud hybrid cloud platform from the
+RHEA collaboration.  It contains only information specific to the
+platform as a whole.  Documentation for the individual services that
+comprise the platform are available elsewhere and may need to be
+consulted for anything other than simple use cases.  Links to that
+documentation are provided in the :ref:`platform-services` section.

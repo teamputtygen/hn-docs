@@ -1,8 +1,6 @@
 
-Rhea Cloud Platform Documentation
-=================================
-
-Document ID: **D-PRO-2.5.1-DOCS**
+Rhea Hybrid Cloud Documentation
+===============================
 
 .. toctree::
    :maxdepth: 1

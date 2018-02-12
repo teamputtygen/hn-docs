@@ -29,6 +29,11 @@ Keycloak
 - `General Keycloak Information <http://www.keycloak.org>`_
 - `Keycloak Documentation <http://www.keycloak.org/documentation.html>`_
 
+Advania
+-------
+
+- `Company Website <https://advania.com/>`_ 
+
 Exoscale
 --------
 

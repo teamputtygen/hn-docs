@@ -9,7 +9,7 @@ gateway, providing first level support itself and coordinating
 interactions with the other consortium members. The diagram provides
 an overview of the support infrastructure.
 
-.. figure:: images/support-desk-phase-2.png
+.. figure:: images/support-desk-pilot.png
    :alt: Support Desk Diagram
    :width: 50%
    :align: center
