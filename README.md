@@ -9,7 +9,7 @@ restructured text as used by
 [Sphinx](http://www.sphinx-doc.org/en/stable/index.html).
 
 You can browse the [**rendered
-documentation**](http://hn-prototype-docs.readthedocs.io/en/latest/) 
+documentation**](http://hn-docs.readthedocs.io/en/latest/) 
 on [ReadTheDocs.org](https://readthedocs.org).
 
 You can build the documentation locally by checking out this
