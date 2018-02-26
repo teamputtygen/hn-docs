@@ -28,69 +28,10 @@ Access`_ section of the SlipStream documentation.  This documentation
 also describes the installation of a "Remote Desktop Connection"
 client for accessing Windows machines.
 
-Cloud Provider Configuration
-----------------------------
+Cloud Credentials
+-----------------
 
-Exoscale
-~~~~~~~~
-
-The configuration of your account for Exoscale should have been done
-for you, when you initially contacted SixSq support or your realm
-administrator.  If this is not the case but you have your Exoscale
-credentials, you can follow the `Exoscale Cloud Configuration`_
-instructions.  If you do not have credentials, contact the SixSq
-support.
-
-Open Telekom Cloud
-~~~~~~~~~~~~~~~~~~
-
-The account manager for each Buyers Group organization is responsible
-for creating user accounts.  If you don't have one, then contact your
-account manager.
-
-Once you have your account, you'll have to configure your Nuvla
-account with your credentials.  To find them:
-
-1. Log in to your OTC account.
-
-2. On your home page, click on the "My Credential" link.
-
-.. figure:: ../images/otcHome.png
-   :alt: OTC Home Page
-   :width: 100%
-   :align: center
-
-3. On the credential page, you can find all of the information that
-   you will need to configure your Nuvla account.  The fields on shown
-   on the figure and listed below.
-
-.. figure:: ../images/otcCredential.png
-   :alt: OTC Credential Page
-   :width: 100%
-   :align: center
-
-The fields that you need are:
-
- - User name
- - Domain Name
- - Password
- - Project name
-
-Using these values, you can then configure your Nuvla account.
-
-To configure your Nuvla account for OTC, go to your profile page and
-click on "Edit...".  Find the section "open-telekom-de1" and open that
-section. It should look similar to the following figure.
-
-.. figure:: ../images/nuvlaOTCConfiguration.png
-   :alt: Nuvla Configuration for OTC
-   :width: 100%
-   :align: center
-
-Provide the values of the fields from the information on your OTC
-credential page and then save your profile.  You should be able to use
-OTC cloud resources now.
-
-.. _`Remote Machine Access`: http://ssdocs.sixsq.com/en/latest/tutorials/ss/appendix.html#remote-machine-access
-
-.. _`Exoscale Cloud Configuration`: http://ssdocs.sixsq.com/en/latest/tutorials/ss/prerequisites.html#exoscale
+In order to be granted access to the OTC, Exoscale and Advania cloud 
+credentials, technical users must contact their account managers, asking 
+for a specific user role (**can_deploy**) to be given to them, as 
+described in :doc:`../administrator/cloud-configuration`.

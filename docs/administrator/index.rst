@@ -23,6 +23,7 @@ and login.
    :maxdepth: 1
    :hidden:
 
+   cloud-configuration
    groups
    roles
    quota
