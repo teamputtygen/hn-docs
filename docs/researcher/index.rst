@@ -9,6 +9,7 @@ by researchers.
    :maxdepth: 1
    :hidden:
 
+   scaling-guidelines
    linux-vm
    windows-vm
    docker-compose
