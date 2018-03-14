@@ -32,6 +32,7 @@ Keycloak
 Advania
 -------
 
+- `Advania Portal <https://portal.hpc.is/auth/login/>`_
 - `Company Website <https://advania.com/>`_ 
 
 Exoscale
