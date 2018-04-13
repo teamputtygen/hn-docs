@@ -13,14 +13,6 @@ For the browser-based interfaces to Nuvla and Onedata services, you can directly
 use the credentials for your Identity Provider in the eduGAIN and Elixir AAI federations.
 For API and command line interface access to Nuvla, the use of revocable API key/secret pairs are recommended.
 
-
-Enabling Account Password
-^^^^^^^^^^^^^^^^^^^^^^^^^
-
-For users authenticating via eduGAIN and Elixir AAI, **you must
-enable a password for your Nuvla account**. To do this, see :ref:`enabling-pwd`
-
-
 Generating API key/secret on Nuvla
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
