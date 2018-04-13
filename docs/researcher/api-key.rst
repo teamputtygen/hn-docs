@@ -38,6 +38,8 @@ lifetime of a session cookie is fixed at 24 hours.**
 
 .. note:: Currently the browser interface does not support generation of API key/secret pairs.  To work around this limitation, the API key/secret pairs can generated from the command line.
 
+.. _enabling-pwd:
+
 Enabling Account Password
 -------------------------
 
