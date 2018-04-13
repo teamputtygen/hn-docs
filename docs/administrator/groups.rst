@@ -1,3 +1,5 @@
+.. _groups:
+
 Manage Groups
 =============
 

@@ -1,3 +1,5 @@
+.. _whitelisting:
+
 Whitelisting Users
 ==================
 

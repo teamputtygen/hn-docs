@@ -1,3 +1,5 @@
+.. _block:
+
 Blocking New User Logins
 ========================
 
