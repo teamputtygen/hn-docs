@@ -28,6 +28,42 @@ Select Your Federated Login
    :width: 80%
    :align: center
 
+Joining a space
+^^^^^^^^^^^^^^^
+
+A training space has been created called "space-load".  In the
+lefthand menu under the "DATA SPACE MANAGEMENT" section, click on the
+"join a space" link.
+
+.. figure:: ../../images/op-join1.png
+   :alt: Joining a Onedata Space
+   :width: 80%
+   :align: center
+
+You can paste the invitation token in the dialog to join the space.
+
+.. figure:: ../../images/op-join2.png
+   :alt: Join Space Dialog
+   :width: 80%
+   :align: center
+
+In order to upload a file, simply open the folder in which the file
+should be placed and drag the file into the browser window:
+
+.. figure:: ../../images/empty-op.png
+   :alt: Oneprovider
+   :width: 100%
+   :align: center
+
+Opening or downloading a file simply requires double clicking on the
+file in the file window.
+
+**Make sure that the popups for this browser window are not blocked,
+and unblock them if necessary.**
+
+From this Web interface you can create some directories and files.
+Additionally, you may use the `Upload` button.
+
 .. _access-token:
 
 Create an Access Token
@@ -77,15 +113,14 @@ with https://op-exo.hn.nuv.la.
 Joining a space
 ^^^^^^^^^^^^^^^
 
-A training space has been created. Go to the space menu and click on
-the "Join" button.
+A training space has been created called "space-load".  In the lefthand menu under the "DATA SPACE MANAGEMENT" section, click on the "join a space" link.
 
 .. figure:: ../../images/op-join1.png
    :alt: Joining a sp
    :width: 80%
    :align: center
 
-You have been provided with an invitation Token to be copy/pasted here.
+You can paste the invitation token in the dialog to join the space.
 
 .. figure:: ../../images/op-join2.png
    :alt: Joining a sp

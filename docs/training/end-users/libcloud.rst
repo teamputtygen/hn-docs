@@ -8,9 +8,10 @@ previously deployed (see Section :ref:`libcloud-deploy`) and **click
 on its `Service URL` link at the top of the page**.  This will log you
 into your virtual machine via SSH.
 
-.. warning:: If you've not configured your browser in this way, you
-   will need to open a terminal (or SSH client) and log in manually,
-   using the information in the link.
+.. warning:: If you've not configured your browser to open SSH links
+   automatically, you will need to open a terminal (or SSH client) and
+   log in manually, using the information in the link and your SSH
+   public key.
 
  
 Using the Libcloud Compute Driver for SlipStream
@@ -20,79 +21,50 @@ For the browser-based interfaces to Nuvla and Onedata services, you
 can directly use the credentials for your Identity Provider in the
 eduGAIN and Elixir AAI federations.
 
-For API and command line interface access to Nuvla, the use of
-revocable API key/secret pairs are required.
+**For API and command line interface access to Nuvla, the use of
+revocable API key/secret pairs are required.**
 
 
 Generating API Key/Secret on Nuvla
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-- Define the following alias::
+We will use the new "CUBIC" interface to Nuvla to generate an API
+key/secret pair.
 
-  $ alias ss-curl="curl --cookie-jar ~/cookies -b ~/cookies -sS"
-
-
-
-- Create a json file defining the nuvla session with your <username>
-  and <password>::
-
-    cat > session-create-internal.json <<EOF
-    {
-      "sessionTemplate" : {
-                            "href" : "session-template/internal",
-                            "username" : "<username>",
-                            "password" : "<password>"
-                           }
-    }
-    EOF
-
-- Generate a `cookies` file for the session::
-
-     ss-curl https://nuv.la/api/session \
-         -D - \
-         -o /dev/null \
-         -XPOST \
-         -H content-type:application/json \
-         -d@session-create-internal.json
-
-- You may check that a `cookies` file is actually created::
-
-  $ cat ~/cookies
-
-- Credential Creation::
-
-    cat > create.json <<EOF
-    {
-      "credentialTemplate" : {
-                               "href" : "credential-template/generate-api-key",
-                               "ttl" : 86400
-                              }
-    }
-    EOF
+ - Navigate to the `CIMI credential page
+   <https://nuv.la/webui/cimi/credential>`_.
+ - Click on "search" to show the list of available credentials.
+ - Click on "add" to create a new credential.
+ - For the "resource template" select "Generate API key", if it isn't
+   already selected.
+ - Provide optional name and description, if you'd like.
+ - Leave the TTL at zero.
+ - Click on the `create` button.
 
 .. note:: The ttl parameter for the API key/secret lifetime (TTL) is
    optional.  If not provided, the credential will not expire (but can
    still be revoked at anytime.)  The TTL value is in seconds, so the
    above time corresponds to 1 day.
 
-To actually create the new credential::
+This should bring up a success dialog that looks similar to the
+following screenshot.
 
-  $ ss-curl https://nuv.la/api/credential \
-   -X POST \
-   -H 'content-type: application/json' \
-   -d @create.json
-  {
-    "status" : 201,
-    "message" : "created credential/05797630-c1e2-488b-96cd-2e44acc8e286",
-    "resource-id" : "credential/05797630-c1e2-488b-96cd-2e44acc8e286",
-    "secretKey" : "..."
-  }
+.. figure:: ../../images/api-key-secret-screenshot.png
+   :alt: Successful Creation of API Key/Secret
+   :width: 100%
+   :align: center
+
+**From this dialog, you will need the values of the "resource-id" and
+"secretKey" fields.**
 
 .. warning: This secret is not stored on the server and cannot be
    recovered!  Be sure to store the secret somewhere safe.
 
+Configure Terminal with API Key/Secret
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-- Store KEY and SECRET as environment variable
+Store KEY and SECRET as environment variables in your terminal
+session.
 
 Copy the secret (secretKey) that is returned from the server and export it::
 
@@ -103,9 +75,18 @@ Example::
 
   $ export KEY=05797630-c1e2-488b-96cd-2e44acc8e286
 
+We will use these values when starting a machine via Libcloud with
+Nuvla.
+
 
 Using Libcloud for Nuvla deployment
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Do the following from the SSH session that you opened on your
+`Centos-libcloud` machine to start a new virtual machine using your
+API key/secret credentials.
+
+We will deploy a WordPress instance via the Libcloud API.
 
 - You will need the latest version of the `slipstream-libcloud-driver`::
 
@@ -131,7 +112,7 @@ Using Libcloud for Nuvla deployment
 
 - Log into Nuvla using API key and secret::
 
-    # KEY and SEare taken from the environment
+    # KEY and SECRET are taken from the environment
 
     ss = slipstream_driver(os.environ["KEY"],
                            os.environ["SECRET"],
@@ -147,7 +128,8 @@ Using Libcloud for Nuvla deployment
      # Get the WordPress image
      image = ss.get_image('apps/WordPress/wordpress')
 
-- Set WordPress Title::
+- Set WordPress Title.  You may want to change this to be convinced it
+  is your instance::
 
      wordpress_title = 'WordPress deployed by SlipStream through Libcloud'
 
@@ -155,7 +137,8 @@ Using Libcloud for Nuvla deployment
 
      parameters = dict(wordpress_title=wordpress_title)
 
--  Create the Node::
+-  Create the Node. After this the node should also be visible in the
+   web browser interface::
 
      node = ss.create_node(image=image, ex_parameters=parameters)
 
@@ -167,7 +150,8 @@ Using Libcloud for Nuvla deployment
 
      node = ss.ex_get_node(node.id)
 
--  Print the WordPress URL::
+-  Print the WordPress URL.  Visit the URL to ensure that the service
+   is accessible::
 
      print node.extra.get('service_url')
 
@@ -204,7 +188,12 @@ process to deploy on Exoscale.
     deployment_name='libcloud-example'
 
 - Set your Exoscale Key and Secret.  **Note that these are NOT the
-  same key and secret that you used for Nuvla.**::
+  same key and secret that you used for Nuvla.** Normally, you'd use
+  the `SlipStream Exoscale instructions
+  <http://ssdocs.sixsq.com/en/latest/tutorials/ss/prerequisites.html#exoscale>`_
+  to find the correct values.  However, your instructor will give you
+  the correct values for the training. Set these variables in the
+  shell::
 
     key=....
     secret=...
