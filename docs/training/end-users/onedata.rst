@@ -1,8 +1,7 @@
 .. _onedata:
 
-Onedata
-========
-
+Managing Data with Onedata
+==========================
 
 Managing Files via Web Interface
 --------------------------------
@@ -17,8 +16,8 @@ Login to Onezone
 ^^^^^^^^^^^^^^^^
 
 The Onezone web interface is already deployed at
-https://onezone.rhea-hn.com. You will use your standard federated
-identity to log into the service, **not your student identity**.
+https://onezone.rhea-hn.com. You will use your **standard federated
+identity** to log into the service, **not your student identity**.
 
 Select Your Federated Login
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -28,8 +27,8 @@ Select Your Federated Login
    :width: 80%
    :align: center
 
-Joining a space
-^^^^^^^^^^^^^^^
+Join a Space
+^^^^^^^^^^^^
 
 A training space has been created called "space-load".  In the
 lefthand menu under the "DATA SPACE MANAGEMENT" section, click on the
@@ -40,45 +39,17 @@ lefthand menu under the "DATA SPACE MANAGEMENT" section, click on the
    :width: 80%
    :align: center
 
-You can paste the invitation token in the dialog to join the space.
+To join the space, you will need a token.  A token has been generated
+for you and associated with your student username.  You can find your
+token in the credentials file you have been given.  Copy the token and
+paste it into the form that appeared. 
 
 .. figure:: ../../images/op-join2.png
    :alt: Join Space Dialog
    :width: 80%
    :align: center
 
-In order to upload a file, simply open the folder in which the file
-should be placed and drag the file into the browser window:
-
-.. figure:: ../../images/empty-op.png
-   :alt: Oneprovider
-   :width: 100%
-   :align: center
-
-Opening or downloading a file simply requires double clicking on the
-file in the file window.
-
-**Make sure that the popups for this browser window are not blocked,
-and unblock them if necessary.**
-
-From this Web interface you can create some directories and files.
-Additionally, you may use the `Upload` button.
-
-.. _access-token:
-
-Create an Access Token
-^^^^^^^^^^^^^^^^^^^^^^
-
-.. figure:: ../../images/onedata_rhea_onezone_token.png
-   :alt: Onezone token
-   :width: 80%
-   :align: center
-
-This token will be needed when using access via OneClient (see
-:ref:`posix`).
-
-
-Select your storage provider
+Select Your Storage Provider
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Onedata enables access to federated storage resources via distributed
@@ -94,9 +65,6 @@ where the computation will be performed.
    :align: center
 
 
-Navigate to your files
-^^^^^^^^^^^^^^^^^^^^^^
-
 Press **Go to your files** button in the popup. The Oneprovider
 hostname is displayed in the popup, along with the provider name and
 storage quota dedicated to this space:
@@ -109,132 +77,138 @@ storage quota dedicated to this space:
 You will be redirected to the Oneprovider page, where the URL starts
 with https://op-exo.hn.nuv.la.
 
+Adding or Modifying Files
+^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Joining a space
-^^^^^^^^^^^^^^^
+On the Oneprovider interface:
 
-A training space has been created called "space-load".  In the lefthand menu under the "DATA SPACE MANAGEMENT" section, click on the "join a space" link.
+ - Click on the "Data" tab on the left.
+ - Select the "space-load" space in the dropdown list of spaces.
 
-.. figure:: ../../images/op-join1.png
-   :alt: Joining a sp
-   :width: 80%
-   :align: center
-
-You can paste the invitation token in the dialog to join the space.
-
-.. figure:: ../../images/op-join2.png
-   :alt: Joining a sp
-   :width: 80%
-   :align: center
-
-In order to upload a file, simply open the folder in which the file
-should be placed and drag the file into the browser window:
+You should then see an interface similar to the following screenshot.
 
 .. figure:: ../../images/empty-op.png
    :alt: Oneprovider
    :width: 100%
    :align: center
 
-Opening or downloading a file simply requires double clicking on the
-file in the file window.
+This panel will allow you to manipulate files in the space from the
+browser.
 
-**Make sure that the popups for this browser window are not blocked,
-and unblock them if necessary.**
+ - You can upload a file to a folder, by opening that folder and then
+   dragging and dropping the file into the browser window.
+ - You can also upload a file by selecting a file after clicking on
+   the "upload" icon.
+ - Opening (usually downloading) a file simply requires double
+   clicking on the file.
+ - You can also create directories or files via the associated icons. 
 
-From this Web interface you can create some directories and files.
-Additionally, you may use the `Upload` button.
+.. note: Make sure that the popups for this browser window are not
+         blocked, and unblock them if necessary.
+
+From the web interface,
+
+ - Create a directory with a unique name.
+ - Add one or more files to this directory.
+ - Download one and ensure that it has the correct contents.
+
+We will next verify that these files can be accessed from a virtual
+machine with Oneclient.
 
 .. _posix:
 
 Access Files on a VM via POSIX
 ------------------------------
 
-Files can also be accessed directly via POSIX protocol on a Virtual
-Machine.
+Files can also be accessed directly via the POSIX protocol from a
+Virtual Machine (or another client).  Running the Oneclient process
+provides this functionality. 
+
+.. _access-token:
+
+Create an Access Token
+^^^^^^^^^^^^^^^^^^^^^^
+
+Oneclient requires an access token to interact with the data stored in
+a space.  You can generate such a token from the Onezone service.
+
+If you're currently viewing the Oneprovider interface, you can return
+to Onezone by clicking on the "Providers" link in the left menu.
+
+On the Onezone interface, you should see a menu that resembles the
+following screenshot.  Open the "ACCESS TOKENS" section, if
+necessary. 
+
+.. figure:: ../../images/onedata_rhea_onezone_token.png
+   :alt: Onezone token
+   :width: 80%
+   :align: center
+
+Click on the "Create new access token" action to create a new token.
+The token will be needed to access spaces via Oneclient.
 
 .. _oneclient:
 
-
-Deploying a OneClient application
+Deploying a OneClient Application
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-After logging in to Nuvla, visit the URL where the component is
-defined:
-https://nuv.la/module/HNSciCloud/onedata/oneclient-ubuntu16.04.
+From Nuvla, go to the page containing the `Oneclient component
+<https://nuv.la/module/HNSciCloud/onedata/oneclient-ubuntu16.04>`_. This
+will run Oneclient on an Ubuntu 16.04 virtual machine.  The component
+expects four input parameters. 
 
-It is setup a OneClient instance onto an Ubuntu system.
+.. figure:: ../../images/oneclient-params.png
+   :alt: OneClient deployment parameters
+   :width: 100%
+   :align: center
 
-It is expecting four input parameters.
+#. **access-token**: Paste the access token you had created in Onezone
+   (see :ref:`access-token`) here.
+#. **mount point**: The location where data coming from the spaces
+   will be mounted. You can keep the default value.
+#. **provider-hostname**: The Endpoint URL of your Oneprovider
+   instance. Here, use the value: ``op-exo.hn.nuv.la``.
+#. **version**: The Oneclient software version. Use the default value.
 
-  .. figure:: ../../images/oneclient-params.png
-     :alt: OneClient deployment parameters
-     :width: 100%
-     :align: center
-
-1. access-token
-
-Copy paste the Access Token you had created in OneZone (see
-:ref:`access-token`)
-
-
-2. mount point
-
-It is the location where data coming coming from OneProvider spaces
-will be mounted. You can keep the default
-
-3. provider-hostname
-
-This the Endpoint URL of your OneProvider instance Here we will set
-the value: `op-exo.hn.nuv.la`.
-
-4. Version: The OneClient version is set to a default value which we
-   will not touch
-
-
- - Optionally set a tag value of your choice (e.g "training") in the
-   Tags field
-
- - Hit the "Deploy Application Component" button
+As usual, you can optionally set tags for the deployment.  When you've
+provided all of the information, **click the "Deploy Application
+Component" button**. 
 
 
 SSH Connection to the VM
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
 #. From the Nuvla dashboard, wait for the OneClient deployment to be
-   ready
+   ready.
 
-#. Click on its Service URL column (the value starts with ssh://...)
+#. Log into the virtual machine via SSH either by clicking on the
+   `Service URL` for the deployment or by logging in manually. The
+   username for this image is "root". 
 
-   Assuming you added your SSH public key to your Nuvla profile (see
-   :ref:`ssh`), you should be redirected to the Centos 7 VM as user
-   ``root``.  The VM is already running an instance of Oneclient
-   process to provide POSIX access to your data.
+#. Browse the directory which was set as ``mount point`` for
+   Onedata. If you didn't change the default it will be
+   ``/mnt/onedata``. 
 
-#. Browse the directory which was set as ``mount point`` parameter
-   when :ref:`oneclient`
-
-   If you haven't changed the default it should be::
-
-     $ ls /mnt/onedata
-
-   You should find a ``space-load`` folder which was provided by your
-   Onezone administrator.
+   In this directory, you should find a ``space-load`` folder which
+   corresponds to the ``space-load`` space in Onedata.
 
 #. Read files from Oneclient::
 
        $ ls -lh /mnt/onedata/space-load/
 
-   It should reflect the files you uploaded from the web interface.
+   It should contain the files you uploaded from the web
+   interface. There will likely be other files there because the other
+   students are also using the same space.
 
 #. Creating files from Oneclient
 
    Either::
 
-       $ touch /mnt/onedata/space-load/somefile
+       $ touch /mnt/onedata/space-load/studentXX-test.txt
 
    Or::
 
-       $ echo Grenoble > /mnt/onedata/space-load/file.txt
+       $ echo Grenoble > /mnt/onedata/space-load/studentXX-test.txt
 
    After refreshing your Oneprovider web page, you should see your new
-   files in the web interface.
+   files in the web interface as well. 

@@ -1,7 +1,7 @@
 .. _libcloud:
 
-Libcloud
-========
+Managing VMs with Libcloud
+==========================
 
 From your Dashbord, identify the Centos-libcloud component you have
 previously deployed (see Section :ref:`libcloud-deploy`) and **click

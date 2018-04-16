@@ -40,8 +40,9 @@ applications, Nuvla will deploy one "orchestrator" machine per cloud.
 To deploy, the example application:
 
  - Ensure that you are logged into Nuvla.
- - Navigate to the `LAMP application
-   <https://nuv.la/module/apps/LAMP/lamp-deployment>`_.
+ - Navigate to the `Docker Swarm
+   <https://nuv.la/module/apps/Containers/docker-swarm/swarm>`_
+   application.
  - Click on the `Deploy` action.
  - Click on the `Deploy` button in the dialog.
 
@@ -49,6 +50,9 @@ You should not need to change anything in the deployment dialog,
 although, as before, you may add tags to your deployment.
 
 You will again be redirected to the Nuvla Dashboard at the end of the
-process.  This application will run 7 virtual machines in a
-coordinated 3-tier web application.  This will also take a few minutes
-to complete.
+process.  This application will run a Docker Swarm cluster with one
+Master and one Worker.  (You can change the number of workers in the
+deployment dialog.) This will also take a few minutes to complete.
+
+If you have time, you can log into the master node and run a container
+on this swarm. 
