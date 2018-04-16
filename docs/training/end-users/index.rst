@@ -1,5 +1,5 @@
-End-users training
-===================
+End-Users Training
+==================
 
 .. toctree::
    :maxdepth: 1

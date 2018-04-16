@@ -1,8 +1,10 @@
 Platform Training
 =================
 
-
-This section contains information related to the training on April 17th 2018.
+This section contains information related to the training on 17 April
+2018 for both end-users and procurers.  **This section, and references
+to the main body of the documentation, constitutes Deliverable
+M-PIL-3.1.**
 
 .. toctree::
    :maxdepth: 1

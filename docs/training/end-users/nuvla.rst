@@ -1,29 +1,48 @@
 Deploying on Nuvla
 ==================
 
-
 .. _libcloud-deploy:
 
-Deploying a base image
-----------------------
+Deploying a Simple Component
+----------------------------
 
-- After logging into Nuvla open the `Centos-libcloud` application from the following link:
+We will start by deploying a simple component.  (A "component" for
+SlipStream is a single-VM deployment.) This is a minimal CentOS image
+with the Libcloud library (and dependencies) installed.
 
-https://nuv.la/module/Training/Centos-libcloud
+ - When logged into Nuvla, open the `Centos-libcloud` application from
+   the following link: https://nuv.la/module/Training/Centos-libcloud.
+ - Click on the `Deploy` action.
+ - Click on the `Deploy` button after filling in the form.
 
-- Click on its Deploy button
+At the end of the process, you'll be redirected to the Nuvla
+Dashboard. 
 
-- On the "Deploy Application Component" dialog you may optionally set the Tag field with comma separated values
+On the "Deploy Application Component" dialog you may optionally set
+the Tag field with comma separated values to help you remember why the
+component was deployed.  Because we will later use it when presenting
+the :ref:`libcloud` feature, you may want to set the tags "libcloud,
+training".
 
-Because we will later use it when presenting the :ref:`libcloud` feature, we may set the values to "libcloud, training"
 
+Deploying an Application
+------------------------
 
-Deploying a more complex application
-------------------------------------
+For SlipStream an "application" consists of a deployment with multiple
+virtual machines.  To assist with the lifecycle management of
+applications, Nuvla will deploy one "orchestrator" machine per cloud. 
 
-After log in to Nuvla, visit the URL where the component is defined :
+To deploy, the example application:
 
-https://nuv.la/module/apps/LAMP/lamp-deployment
+ - Ensure that you are logged into Nuvla.
+ - Navigate to the `LAMP` application:
+   https://nuv.la/module/apps/LAMP/lamp-deployment.
+ - Click on the `Deploy` action.
+ - Click on the `Deploy` button in the dialog.
+
+You should not need to change anything in the deployment dialog,
+although, as before, you may add tags to your deployment.  You will be
+redirected to the Nuvla Dashboard at the end of the process. 
 
 
 

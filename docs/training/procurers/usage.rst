@@ -1,7 +1,7 @@
 Usage monitoring in Nuvla
 =========================
 
-Resource monitoring via WebUI interface
+Resource Monitoring via WebUI Interface
 ---------------------------------------
 
 In Nuvla open the Usage page
@@ -30,6 +30,6 @@ Get usage information for a given cloud, for a given period
 4. Hit the search icon
 
 
-
 Deploy a component and notice its impact on usage
 --------------------------------------------------
+

@@ -1,36 +1,46 @@
 Introduction
 ============
 
-To log in to Nuvla, browse the page :
-https://nuv.la
+The tutorial will use a set of student accounts that have been created
+ahead of time. 
 
-Click and the `Log in` button
+ - To log in to Nuvla, browse to the page: https://nuv.la.
+ - Click the `Log in` button.
+ - On the next popup window click the SixSq/RHEA Federated Login and
+   then choose the `SixSq Realm` from the list then click on SixSq
+   realm button.
 
+At this point, you will be redirected to the Keycloak server that
+allows Federated Identity management via the eduGAIN and Elixir AAI
+identity federations.
 
-On the next popup window use the SixSq/RHEA Federated Login and choose the `SixSq Realm` from the list then
-click on SixSQ realm button
+From the Keycloak login page:
 
-You will be redirected to the fed-id page where you can enter your student credentials
-(Username is one of `studentXX` and password is set as `training`)
+ - Enter your student credentials; your username is one of `studentXX`
+   and the password is set to `training`.
+ - Accept the Terms and Conditions.
 
-When requested , accept the Terms and conditions
-
-
-You will be redirected to the AppStore page of Nuvla
-
+At the end of the process you will be redirected to the App Store page
+of Nuvla.
 
 .. _ssh:
 
 Setting SSH keys
 ----------------
 
-Go to the upper right menu with your StudentXX name and choose "Profile"
+So that you can log into virtual machines that you deploy, Nuvla must
+have a copy of your public SSH key.  This describes how to add an SSH
+public key to Nuvla. 
 
-Click the `Edit` button
+ - Go to the upper right menu with your `StudentXX` username and
+   choose "Profile".
+ - Click the `Edit` button.
+ - Open the `General Section` by clicking on the section header.
+ - In the Default cloud list, choose `exoscale-ch-gva`.
+ - Copy your SSH public key to the `SSH Public Key(s) (one per line)`
+   text area.
+ - Click the `Save` action.
 
-Display the `General Section`
+Be sure to copy the full contents of your public SSH key as a **single
+line of text**!
 
-In the Default cloud list, choose `exoscale-ch-gva`
-Copy your SSH public key to the `SSH Public Key(s) (one per line)` Text area
-
-Hit the `Save` button

@@ -1,19 +1,30 @@
 .. _libcloud:
 
 Libcloud
-=========
+========
 
-From your Dashbord, identify the Centos-libcloud component you have previously deployed
-(when :ref:`libcloud-deploy`) and click on its `Service URL` link
+From your Dashbord, identify the Centos-libcloud component you have
+previously deployed (see Section :ref:`libcloud-deploy`) and **click
+on its `Service URL` link at the top of the page**.  This will log you
+into your virtual machine via SSH.
+
+.. warning:: If you've not configured your browser in this way, you
+   will need to open a terminal (or SSH client) and log in manually,
+   using the information in the link.
+
+ 
+Using the Libcloud Compute Driver for SlipStream
+------------------------------------------------
+
+For the browser-based interfaces to Nuvla and Onedata services, you
+can directly use the credentials for your Identity Provider in the
+eduGAIN and Elixir AAI federations.
+
+For API and command line interface access to Nuvla, the use of
+revocable API key/secret pairs are required.
 
 
-Using the libcloud compute driver for Slipstream
--------------------------------------------------
-For the browser-based interfaces to Nuvla and Onedata services, you can directly
-use the credentials for your Identity Provider in the eduGAIN and Elixir AAI federations.
-For API and command line interface access to Nuvla, the use of revocable API key/secret pairs are recommended.
-
-Generating API key/secret on Nuvla
+Generating API Key/Secret on Nuvla
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 - Define the following alias::
@@ -22,7 +33,8 @@ Generating API key/secret on Nuvla
 
 
 
-- Create a json file defining the nuvla session with your <username> and <password>::
+- Create a json file defining the nuvla session with your <username>
+  and <password>::
 
     cat > session-create-internal.json <<EOF
     {
@@ -58,9 +70,10 @@ Generating API key/secret on Nuvla
     }
     EOF
 
-NB : The ttl parameter for the API key/secret lifetime (TTL) is optional.
-If not provided, the credential will not expire (but can still be revoked at anytime.)
-The TTL value is in seconds, so the above time corresponds to 1 day.
+.. note:: The ttl parameter for the API key/secret lifetime (TTL) is
+   optional.  If not provided, the credential will not expire (but can
+   still be revoked at anytime.)  The TTL value is in seconds, so the
+   above time corresponds to 1 day.
 
 To actually create the new credential::
 
@@ -75,13 +88,15 @@ To actually create the new credential::
     "secretKey" : "..."
   }
 
+.. warning: This secret is not stored on the server and cannot be
+   recovered!  Be sure to store the secret somewhere safe.
+
+
 - Store KEY and SECRET as environment variable
 
 Copy the secret (secretKey) that is returned from the server and export it::
 
   $ export SECRET=<...>
-
-NB : This secret is not stored on the server and cannot be recovered.
 
 The `key` is the value of `resource-id` (without the `credential\ ` prefix).
 Example::
@@ -161,11 +176,12 @@ Using Libcloud for Nuvla deployment
      ss.destroy_node(node)
 
 
-
-
-
-Using Libcloud directly on Exoscale
+Using Libcloud Directly on Exoscale
 -----------------------------------
+
+One of the benefits of the Libcloud API is that the same code can be
+reused for different cloud providers.  Here we will use the same
+process to deploy on Exoscale. 
 
 - Open a python session::
 
@@ -187,7 +203,8 @@ Using Libcloud directly on Exoscale
     size_name = 'Micro'
     deployment_name='libcloud-example'
 
-- Set your Exoscale Key and Secret::
+- Set your Exoscale Key and Secret.  **Note that these are NOT the
+  same key and secret that you used for Nuvla.**::
 
     key=....
     secret=...
@@ -210,7 +227,7 @@ Using Libcloud directly on Exoscale
     images = {i.extra['displaytext']: i for i in exo.list_images(location=location)}
     image = images.get(image_name)
 
-- Specifiy expected size::
+- Specify expected size::
 
      sizes = {s.name: s for s in exo.list_sizes()}
      size = sizes.get(size_name)
