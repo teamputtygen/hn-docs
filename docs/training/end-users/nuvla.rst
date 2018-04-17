@@ -6,10 +6,10 @@ Deploying on Nuvla
 Deploying a Simple Component
 ----------------------------
 
-We will start by deploying a simple component.  A "component" for
-SlipStream is a single-VM deployment. The example we use here is a
-minimal CentOS image with the Libcloud library (and dependencies)
-installed.
+We will start by deploying a simple application component.  A
+"component" for SlipStream is a single-VM deployment. The example we
+use here is a minimal CentOS image with the Libcloud library (and
+dependencies) installed.
 
  - When logged into Nuvla, open the `Centos-libcloud
    <https://nuv.la/module/Training/Centos-libcloud>`_ application
@@ -29,7 +29,6 @@ Dashboard.  At the bottom, you should be able to see the
 of minutes to complete.
 
 
-
 Deploying an Application
 ------------------------
 
@@ -42,17 +41,18 @@ To deploy, the example application:
  - Ensure that you are logged into Nuvla.
  - Navigate to the `Docker Swarm
    <https://nuv.la/module/apps/Containers/docker-swarm/swarm>`_
-   application.
+   application or choose this application from the App Store.
  - Click on the `Deploy` action.
- - Click on the `Deploy` button in the dialog.
+ - Click on the `Deploy Application` button in the dialog.
 
 You should not need to change anything in the deployment dialog,
 although, as before, you may add tags to your deployment.
 
 You will again be redirected to the Nuvla Dashboard at the end of the
 process.  This application will run a Docker Swarm cluster with one
-Master and one Worker.  (You can change the number of workers in the
-deployment dialog.) This will also take a few minutes to complete.
+Master and one Worker by default; you can change the number of workers
+in the deployment dialog if you want.  This will also take a few
+minutes to complete.
 
 If you have time, you can log into the master node and run a container
 on this swarm. 

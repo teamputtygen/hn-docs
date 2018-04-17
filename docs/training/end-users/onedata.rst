@@ -183,7 +183,11 @@ SSH Connection to the VM
 
 #. Log into the virtual machine via SSH either by clicking on the
    `Service URL` for the deployment or by logging in manually. The
-   username for this image is "root". 
+   username for this image is "root".
+
+
+Browse Onedata Files
+^^^^^^^^^^^^^^^^^^^^
 
 #. Browse the directory which was set as ``mount point`` for
    Onedata. If you didn't change the default it will be

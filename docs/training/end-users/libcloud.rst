@@ -86,7 +86,7 @@ Do the following from the SSH session that you opened on your
 `Centos-libcloud` machine to start a new virtual machine using your
 API key/secret credentials.
 
-We will deploy a WordPress instance via the Libcloud API.
+**We will deploy a WordPress instance via the Libcloud API.**
 
 - You will need the latest version of the `slipstream-libcloud-driver`::
 
@@ -226,21 +226,14 @@ process to deploy on Exoscale.
    # Last parameter is optional, but is set here to allow SSH connectivity to the instance
    node = exo.create_node(name=deployment_name, size=size, image=image, location=location, ex_security_groups=['slipstream_managed'] )
 
-At this stage you may check the instance from Exoscale portal
-
-.. figure:: ../../images/libcloud-exo.png
-   :alt: Libcloud on Exoscale
-   :width: 100%
-   :align: center
-
-
 - Display some results::
 
    pp(node)
    pp(node.public_ips)
    pp(node.extra['password'])
 
-- Display help message for SSH connection to the running instance::
+- Display help message for SSH connection to the running instance.
+  Log into the machine to ensure that it is working::
 
      msg =""" SSH command :
      $ ssh centos@{}

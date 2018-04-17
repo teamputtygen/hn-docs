@@ -8,4 +8,5 @@ End-Users Training
    nuvla.rst
    libcloud.rst
    onedata.rst
+   conclusions.rst
    
