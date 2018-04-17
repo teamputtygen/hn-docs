@@ -1,4 +1,4 @@
-Onedata management
+Onedata Management
 ==================
 
   .. figure:: ../../images/oneprovider-slide.png
@@ -6,19 +6,24 @@ Onedata management
      :width: 100%
      :align: center
 
-Oneprovider implements drivers for storages such as NFS, GlusterFS, Ceph, Openstack SWIFT and S3.
+Oneprovider implements drivers for storages such as NFS, GlusterFS,
+Ceph, Openstack SWIFT and S3.
 
-In order to function properly, Oneprovider needs to register with a Onezone service,
-which requires a public IP address and specific ports opened to the world (see `Firewall setup`_).
+In order to function properly, Oneprovider needs to register with a
+Onezone service, which requires a public IP address and specific ports
+opened to the world (see `Firewall setup`_).
 
-We have set a sample Onezone deployment at: https://onezone.rhea-hn.com
+We have set up a sample Onezone deployment at
+https://onezone.rhea-hn.com.
 
-Once logged in, we will add a new space and later support it with a storage from the Oneprovider instance.
+Once logged in, we will add a new space and later support it with a
+storage from the Oneprovider instance.
 
-Create a space
+Create a Space
 --------------
 
-#. In the Onezone Web Interface unfold Data space management tab located on the left menubar.
+#. In the Onezone Web Interface unfold Data space management tab
+   located on the left menubar.
 #. Click Create new space button.
 #. Provide new space name in the text edit field and confirm.
 
@@ -27,7 +32,7 @@ Create a space
     :width: 10%
     :align: center
 
-Create space support token
+Create Space Support Token
 --------------------------
 
 #. Click on the newly created space on the left to unfold options
@@ -39,7 +44,7 @@ Create space support token
     :width: 80%
     :align: center
 
-Add storage to the Oneprovider
+Add Storage to the Oneprovider
 ------------------------------
 
 #. Open Oneprovider Onepanel administration interface: https://op-exo.hn.nuv.la:9443
@@ -59,13 +64,15 @@ Add storage to the Oneprovider
     :width: 80%
     :align: center
 
-Support the user space
+Support the User Space
 ----------------------
 
 #. Click on the `Spaces` tab on the left
 #. Select storage name to the on assigned in the previous step
-#. Paste the support token created in the Onezone to `Support token` field
-#. Select support size and units - this will be the maximum amount of data occupied by this space on this storage
+#. Paste the support token created in the Onezone to `Support token`
+   field
+#. Select support size and units - this will be the maximum amount of
+   data occupied by this space on this storage
 #. Set `Mount in root` radio button to Off
 #. Set `Import storage data` radio button to Off
 #. Press `Support space`
@@ -75,16 +82,17 @@ Support the user space
     :width: 80%
     :align: center
 
-Check the space support settings
+Check the Space Support Settings
 --------------------------------
 
 #. Click on `Spaces` tab on the left
 #. Select the newly support space from the list
 
-Check the space storage space in Onezone
+Check the Space Storage Space in Onezone
 ----------------------------------------
 
-#. Open Onezone interface in the browser: https://onezone.rhea-hn.com, or refresh if necessary
+#. Open Onezone interface in the browser: https://onezone.rhea-hn.com,
+   or refresh if necessary
 #. Click on the supported space on the left
 #. Check the available storage
 
