@@ -29,7 +29,7 @@ Create a Space
 
 .. figure:: ../../images/onedata_spacestabhome.png
     :alt: Creating new space
-    :width: 10%
+    :width: 30%
     :align: center
 
 Create Space Support Token
