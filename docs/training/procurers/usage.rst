@@ -34,8 +34,8 @@ Usage Information
 Users will be able to see their own usage.  Group administrators or
 SlipStream administrators will be able to see more information. 
 
-Deploy a component and notice its impact on usage
---------------------------------------------------
+Live Statistics
+---------------
 
 You can check that the information is live by deploying a cloud
 application and checking that the usage grows.  For a demonstration,
