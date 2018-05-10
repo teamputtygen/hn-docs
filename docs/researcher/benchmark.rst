@@ -13,7 +13,6 @@ The benchmarks can then be used to select the best performing clouds and service
 To illustrate this feature and build our own knowledge base, we publish benchmarks resulting from our continuous
 monitoring system. The following clouds are currently covered, and we will expand this coverage to more clouds and service offers already configured on the Nuvla service:
 
- * Open Telekom Cloud (OTC)
  * Exoscale Dietikon
  * Exoscale Geneva
   

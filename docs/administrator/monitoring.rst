@@ -23,8 +23,7 @@ Further, the monitoring resource inherits the basic CIMI functionality, which me
 it contains specific and precise ACLs, such that only specific users, groups and
 organisation members with the appropriate rights have access to this information.
 
-This resource is key for other new features, such as the :ref:`accounting` feature,
-as well as the extended :ref:`quota` functionality. 
+This resource is key for other new features, such as the :ref:`accounting` feature.
 
 The REST resource providing this functionality is called *virtual-machine* and can
 be used, for example, to query the following information:

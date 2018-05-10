@@ -13,7 +13,6 @@ Rhea Hybrid Cloud Documentation
    data-manager/index.rst
    support.rst
    service-docs.rst
-   demo/index.rst
    training/index.rst
    consortium.rst
 

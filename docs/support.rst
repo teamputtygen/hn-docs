@@ -17,7 +17,7 @@ an overview of the support infrastructure.
 SixSq manages its support, including the support for HNSciCloud,
 through Freshdesk. The support services are offered in English, but
 may also be available in the local languages of the partners
-(e.g. French or German).
+(e.g. French).
 
 Users can submit support tickets via:
 

@@ -1,10 +1,10 @@
 Consortium
 ==========
 
-The consortium consists of six organizations that have experience
+The consortium consists of four organizations that have experience
 working together to deliver computing solutions. Rhea leads the
-consortium consisting of software providers (SixSq and CYFRONET) and
-cloud service providers (Advania, Exoscale, and T-Systems).
+consortium consisting of software providers (SixSq and CYFRONET) and a
+cloud service provider (Exoscale).
 
 .. image:: images/logo-rhea.png
    :width: 75px
@@ -34,15 +34,6 @@ solution, allowing for easy deployment of the platform.  Academic
 Computer Centre CYFRONET AGH is based in Krakow, Poland. [`more info
 <http://www.cyfronet.krakow.pl/en/4421,main.html>`_]
 
-.. image:: images/logo-advania.svg
-   :width: 100px
-
-Advania is a leading Nordic IT-provider serving thousands of corporate
-clients in the public and private sector. Advania provides a cloud
-infrastructure located in Iceland and optimized for high-performance
-applications to the Consortium's hybrid cloud platform. [`more info
-<https://advania.com/>`_]
-                  
 .. image:: images/logo-exoscale.svg
    :width: 150px
 
@@ -52,14 +43,4 @@ built by DevOps for DevOps. Originally based in Switzerland, it
 provides cloud resources in Switzerland, Austria, and Germany to the
 Consortium's hybrid cloud platform.  [`more info
 <https://exoscale.ch>`_]
-
-.. image:: images/logo-t-systems.png
-   :width: 120px
-
-European leader in IT service delivery, including several cloud
-services, both public and private. Open Telekom Cloud, with resources
-in Germany, forms the foundation of its contribution to the project.
-The company’s experience will also be key in contributing to the
-business model proposed for the resulting service of this
-project. [`more info <https://www.t-systems.com/de/en>`_]
 

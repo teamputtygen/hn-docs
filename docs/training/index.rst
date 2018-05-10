@@ -1,16 +1,7 @@
 Platform Training
 =================
 
-This section contains information related to the training on 17 April
-2018 for both end-users and procurers.  **This section, and references
-to the main body of the documentation, constitutes Deliverable
-D-PIL-3.2.**
-
-.. toctree::
-   :maxdepth: 1
-   :hidden:
-
-   end-users/index.rst
-   procurers/index.rst
-   
+The materials for previous demonstration and training events can be
+found in `older versions of the documentation
+<http://hn-docs.readthedocs.io/en/d-pil-3.2/>`_.
    

@@ -6,12 +6,12 @@ HNSciCloud
 
 Ten of Europe’s leading public research organisations launched the
 `Helix Nebula Science Cloud (HNSciCloud) Pre-Commercial Procurement
-(PCP) <http://www.hnscicloud.eu/>`_ to establish a European hybrid
-cloud platform that will support the high-performance, data-intensive
+(PCP) <http://www.hnscicloud.eu/>`_ to establish a European cloud
+platform that will support the high-performance, data-intensive
 scientific use-cases of this “Buyers Group” and of the research sector
 at large.
 
-This PCP calls for the design and implementation of hybrid innovative
+This PCP calls for the design and implementation of an innovative
 Infrastructure as a Service (IaaS) solutions for compute, storage,
 network connectivity, Federated Identity Management and Service
 Payment Models, to augment and to enhance the science community’s
@@ -24,9 +24,7 @@ commercial services:
 - RHEA System Engineering & Cyber Security expertise
 - SixSq’s Nuvla, a SlipStream-based hybrid-cloud management service
 - Cyfronet’s OneData for Data Management
-- Advania's IaaS Cloud Infrastructure (OpenStack)
 - Exoscale IaaS Cloud Service (CloudStack)
-- Open Telekom Cloud, T-Systems’ IaaS Cloud Service (OpenStack)
 
 The R&D innovations will be incorporated into these services as part
 of our commercial offerings, with minimum intrusion into the buyers’
@@ -34,11 +32,7 @@ infrastructure, including:
 
 - Peta-scale data management solution, portable to any cloud
 - Flexible container management
-- Single dashboard to better manage hybrid resources, including SLA
-  compliance monitoring
-- Unified accounting, integrating multi-cloud provider charges and
-  billing
-- Authentication from user to cloud providers
+- Authentication with users' home credentials
 
 The Pilot (Phase 3) exercises the Consortium's platform at a larger
 scale and allows for continued evolution of the platform to meet the
@@ -47,7 +41,7 @@ needs of scientific computing.
 Functional Overview
 -------------------
 
-The hybrid cloud platform coming from the design phase provides
+The cloud platform coming from the design phase provides
 cost-effective access to large-scale compute and storage resources
 from multiple providers.  The solution brings together three
 commercial services, an authentication infrastructure that supports
@@ -59,8 +53,8 @@ which allows liberal academic and commercial reuse.
 Our solution includes the following main components:
 
 - Authentication (KeyCloak): federates external identity providers,
-  allowing users to use their “home” credentials to access the hybrid
-  cloud platform
+  allowing users to use their “home” credentials to access the
+  platform
 - Orchestration (Nuvla): allows users to manage the full lifecycle of
   cloud applications with a high degree of automation
 - Data Management (Onedata + GlusterFS/S3): allows users to access and
@@ -69,10 +63,10 @@ Our solution includes the following main components:
 - Networking (peering with GÉANT): allows access to all the platform
   services from anywhere with enhanced access from sites connected to
   GÉANT
-- Cloud Resources (Advania, Exoscale, and OTC): IaaS and storage
-  services accessible from the hybrid cloud platform
+- Cloud Resources (Exoscale): IaaS and storage services accessible
+  from the hybrid cloud platform
 - Dashboard (Nuvla): provides an overview of Users’ current
-  activities, resource utilisation, and costs.
+  activities.
 
 .. figure:: images/architecture-overview.png
    :alt: Support Desk Diagram

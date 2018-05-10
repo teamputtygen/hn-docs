@@ -31,7 +31,7 @@ client for accessing Windows machines.
 Cloud Credentials
 -----------------
 
-In order to be granted access to the OTC, Exoscale and Advania cloud 
-credentials, technical users must contact their account managers, asking 
-for a specific user role (**can_deploy**) to be given to them, as 
-described in :doc:`../administrator/cloud-configuration`.
+In order to be granted access to the Exoscale cloud credentials,
+technical users must contact their account managers, asking for a
+specific user role (**can_deploy**) to be given to them, as described
+in :doc:`../administrator/cloud-configuration`.

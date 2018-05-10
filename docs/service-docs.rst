@@ -6,6 +6,7 @@ Platform Services
 Nuvla (SlipStream)
 ------------------
 
+- `Nuvla Operational Status <http://status.nuv.la/>`_
 - `Nuvla Browser Interface <https://nuv.la>`_
 - `General Nuvla Information <http://sixsq.com/services/nuvla>`_
 - `SlipStream User Documentation <http://ssdocs.sixsq.com>`_
@@ -29,24 +30,11 @@ Keycloak
 - `General Keycloak Information <http://www.keycloak.org>`_
 - `Keycloak Documentation <http://www.keycloak.org/documentation.html>`_
 
-Advania
--------
-
-- `Advania Portal <https://portal.hpc.is/auth/login/>`_
-- `Company Website <https://advania.com/>`_ 
-
 Exoscale
 --------
 
+- `Exoscale Operational Status <https://status.exoscale.ch/>`_
 - `Exoscale Portal <https://portal.exoscale.ch>`_
 - `General Exoscale Information <https://www.exoscale.ch>`_
 - `Exoscale User Documentation <https://community.exoscale.ch/documentation/>`_
 - `Exoscale API Documentation <https://community.exoscale.ch/api/>`_
-
-Open Telekom Cloud (OTC)
-------------------------
-
-- `OTC Portal <https://myworkplace.t-systems.com>`_
-- `General OTC Information <https://cloud.telekom.de/en/infrastructure/open-telekom-cloud/>`_
-- `OTC User Documentation <https://cloud.telekom.de/en/infrastructure/open-telekom-cloud/documentation/#navigation-product-subnavi>`_
-- `OTC API Reference <https://cloud.telekom.de/en/infrastructure/open-telekom-cloud/documentation/general-api-reference/>`_
