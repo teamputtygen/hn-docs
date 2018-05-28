@@ -46,7 +46,9 @@ You can also deploy this application from the command line using the
   https://nuv.la/run/98f42dca-98e8-4265-875e-90ddf81d6fca
 
 Use the ``--help`` option to find out how to set other parameters for
-the ``ss-execute`` command.
+the ``ss-execute`` command.  In particular, the ``--wait`` and
+``--final-states`` options are interesting if you want to wait for the
+deployment to be "Ready".
 
 Once the deployment is in the "Ready" state, you can log into the
 master node to use the cluster.  The SSH key from your user profile
