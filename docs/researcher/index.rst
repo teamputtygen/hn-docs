@@ -19,5 +19,5 @@ by researchers.
    create-applications
    api-key
    benchmark
-   hpcaas
+   batch-clusters
    
