@@ -39,13 +39,13 @@ in :doc:`../administrator/cloud-configuration`.
 Request access to  Exoscale GPU
 -------------------------------
 
-To request access to Exoscale GPU instance flavor, just submit a
-support ticket within the `Portal`_ or drop an email to
-support@exoscale.ch.
+To request access to the Exoscale GPU instance flavor, just submit a
+support ticket to `support@sixsq.com`_.
 
-If you registered using a voucher, please specify that it's related to
+If you have registered using a voucher, please specify that it's related to
 the HNSciCloud project in order to speedup the request.
 
 
 .. _`Portal`: https://portal.exoscale.com
+.. _`support@sixsq.com`: support@sixsq.com
 
