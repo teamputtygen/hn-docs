@@ -103,7 +103,7 @@ within a web browser. A typical link looks like:
 
 https://portal.exoscale.com/register?coupon=XXXXXXX
 
-1. Enter your email address and password you wish to use. Accept the
+1. Enter the email address and password you wish to use. Accept the
    terms and hit sign up.
 
 .. image:: ../images/exoscale-voucher-redeem.png
@@ -111,7 +111,7 @@ https://portal.exoscale.com/register?coupon=XXXXXXX
    :align: center
 
 2. A validation email has been sent. Check out your mailbox and click
-   on verify link.
+   on the verification link.
 
 .. image:: ../images/exoscale-account-validation.png
    :alt: Exoscale email validation
