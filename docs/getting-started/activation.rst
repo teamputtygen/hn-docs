@@ -95,6 +95,38 @@ their institute's login page.
     so that the manager can assign roles to them or add them to a
     group.
 
+Exoscale voucher redeem
+------------------------
+
+To redeem an `Exoscale`_ voucher, open the provided voucher link
+within a web browser. A typical link looks like:
+
+https://portal.exoscale.com/register?coupon=XXXXXXX
+
+1. Enter the email address and password you wish to use. Accept the
+   terms and hit sign up.
+
+.. image:: ../images/exoscale-voucher-redeem.png
+   :alt: Exoscale sign up page
+   :align: center
+
+2. A validation email has been sent. Check out your mailbox and click
+   on the verification link.
+
+.. image:: ../images/exoscale-account-validation.png
+   :alt: Exoscale email validation
+   :align: center
+
+3. Choose "for team projects" and fill your details. Choose your
+   `Exoscale`_ organization name and submit:
+
+.. image:: ../images/exoscale-account-details.png
+   :alt: Exoscale account details
+   :align: center
+
+4. You're in and you may now spawn new instances.
+
+
 .. _`Nuvla`: https://nuv.la
 
 .. _`https://nuv.la/webui/login`: https://nuv.la/webui/login
@@ -108,3 +140,5 @@ their institute's login page.
 .. _`support@sixsq.com`: support@sixsq.com
 
 .. _`here`: ../administrator/index.html
+
+.. _`Exoscale`: https://www.exoscale.com

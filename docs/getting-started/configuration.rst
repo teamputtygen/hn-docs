@@ -35,3 +35,17 @@ In order to be granted access to the Exoscale cloud credentials,
 technical users must contact their account managers, asking for a
 specific user role (**can_deploy**) to be given to them, as described
 in :doc:`../administrator/cloud-configuration`.
+
+Request access to  Exoscale GPU
+-------------------------------
+
+To request access to the Exoscale GPU instance flavor, just submit a
+support ticket to `support@sixsq.com`_.
+
+If you have registered using a voucher, please specify that it's related to
+the HNSciCloud project in order to speedup the request.
+
+
+.. _`Portal`: https://portal.exoscale.com
+.. _`support@sixsq.com`: support@sixsq.com
+
