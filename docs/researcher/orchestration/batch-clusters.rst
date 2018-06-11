@@ -30,7 +30,7 @@ within Nuvla and click the ``Deploy...`` action. You can choose which
 cloud infrastructure to use, the number of workers, and their size
 from the deployment dialog.
 
-.. figure:: images/slurm-dialog.png
+.. figure:: ../images/slurm-dialog.png
    :alt: Slurm Deployment Dialog
    :width: 60%
    :align: center

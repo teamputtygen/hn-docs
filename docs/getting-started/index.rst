@@ -10,9 +10,9 @@ then how to ensure that everything is working correctly.
    :maxdepth: 1
    :hidden:
 
-   activation
-   configuration
-   applications
+   exoscale
+   nuvla
+   onedata
 
 
 
