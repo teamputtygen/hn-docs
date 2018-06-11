@@ -20,14 +20,10 @@ The benchmarks can then be used to select the best performing clouds
 and service offers over time, continuously.
 
 To illustrate this feature and build our own knowledge base, we
-publish benchmarks resulting from our continuous monitoring
-system. The following clouds are currently covered, and we will expand
-this coverage to more clouds and service offers already configured on
-the Nuvla service:
+publish benchmarks resulting from our continuous monitoring system.
+All four regions of the Exoscale cloud are covered, including notably
+the Geneva and Frankfurt regions used by HNSciCloud.
 
- * Exoscale Dietikon
- * Exoscale Geneva
-  
 The published benchmarks are obtained by running the *`Unixbench`_*
 suite to measure CPU performance through fast synthetic benchmarks
 like *Whetstone* and *Dhrystone*, every hours.
