@@ -57,19 +57,19 @@ Our solution includes the following main components:
   platform
 - Orchestration (Nuvla): allows users to manage the full lifecycle of
   cloud applications with a high degree of automation
-- Data Management (Onedata + GlusterFS/S3): allows users to access and
-  to manage large datasets hosted in hybrid cloud infrastructures
-  and/or at a Buyers Group organization with minimum intrusion
+- Data Management (Onedata): allows users to access and to manage
+  large datasets hosted in hybrid cloud infrastructures and/or at a
+  Buyers Group organization with minimum intrusion
 - Networking (peering with GÉANT): allows access to all the platform
   services from anywhere with enhanced access from sites connected to
   GÉANT
 - Cloud Resources (Exoscale): IaaS and storage services accessible
   from the hybrid cloud platform
-- Dashboard (Nuvla): provides an overview of Users’ current
+- Dashboard (Exoscale, Nuvla): provides an overview of Users’ current
   activities.
 
 .. figure:: images/architecture-overview.png
-   :alt: Support Desk Diagram
+   :alt: Architectural Overview
    :width: 50%
    :align: center
 
