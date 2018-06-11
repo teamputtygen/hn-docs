@@ -36,104 +36,33 @@ after an API key/secret has been revoked, there is a window of time
 where active session cookies will still allow access.  **The maximum
 lifetime of a session cookie is fixed at 24 hours.**
 
-.. note:: Currently the browser interface does not support generation of API key/secret pairs.  To work around this limitation, the API key/secret pairs can generated from the command line.
+Creating an API Key/Secret
+--------------------------
 
-.. _enabling-pwd:
+The easiest method to create an API Key/Secret is via the newer
+browser interface to Nuvla.  The procedure to do this is:
 
-Enabling Account Password
--------------------------
+ 1. Navigate to the `Nuvla WebUI`_.
+ 2. Ensure that you are logged in.  Click on the login button in the
+    upper right-hand corner if you are not.
+ 3. Navigate to the search panel for `Credentials`_.
+ 4. Click on the "search" button.
+ 5. Click on the "add" button.
+ 6. In the dialog, select "Generate API Key" if it isn't already
+    selected.
+ 7. Change the values for "name", "description", and "TTL" if
+    desired.
+ 8. Click on "create".
+ 9. Note the secret provided in the dialog.  You will not be able to
+    recover this secret later.
 
-For users authenticating via eduGAIN and Elixir AAI, **you must
-enable a password for your Nuvla account**. To do this, use the password
-reset function.
-
-1. Log into Nuvla normally with your eduGAIN or Elixir AAI identity
-provider.
-
-2. After logging in, capture your full username from your profile page.
-You will need the **complete** username.
-
-.. figure:: ../../images/api-key-profile.png
-   :alt: User Profile Link
-   :width: 100%
+.. image:: ../images/api-key-add-dialog.png
+   :scale: 75 %
    :align: center
 
-3. Logout from Nuvla and start the password reset process.  The link is
-shown in the screenshot below:
-
-.. figure:: ../../images/api-key-reset-password.png
-   :alt: Reset Password Link
-   :width: 100%
+.. image:: ../images/api-key-success.png
+   :scale: 75 %
    :align: center
-
-4. Provide your complete username in the password dialog.  This will send
-a confirmation email to your address.
-
-.. figure:: ../../images/api-key-reset-dialog.png
-   :alt: Reset Password Dialog
-   :width: 100%
-   :align: center
-
-5. Visit the link provided in the email.  This will then send you another
-email with a randomly generated password.
-
-6. Using your username and the randomly generated password, log into
-the server via the command line using the `ss-curl` alias.  Details on how to setup the
-`ss-curl` alias can be found in the `SlipStream documentation
-<http://ssdocs.sixsq.com/en/latest/tutorials/ss/automating-slipstream.html#ss-curl-login>`_.
-
-.. note:: Be sure to setup the `ss-curl` alias.  See the SlipStream
-          cURL_ documentation for setting up the correct alias.
-
-With all that completed, you can now create an API key/secret.
-
-Credential Creation
--------------------
-
-Once logged in, you can then generate new API key/secret credentials.
-The details can be found in the `SlipStream API Documentation
-<http://ssapi.sixsq.com/#credential-(cimi)>`_ (API Key and Secret
-section).
-
-Create a template with the information necessary to create the
-credential:
-
-.. code-block:: json
-
-   {
-     "credentialTemplate" : {
-                              "href" : "credential-template/generate-api-key",
-                              "ttl" : 86400
-                             }
-   }
-
-The `ttl` parameter for the API key/secret lifetime (TTL) is optional.
-If not provided, the credential will not expire (but can still be
-revoked at anytime.) The TTL value is in seconds, so the above time
-corresponds to 1 day. Name the file something like ``create.json``.
-
-To actually create the new credential:
-
-.. code-block:: bash
-
-    $ ss-curl https://nuv.la/api/credential \
-     -X POST \
-     -H 'content-type: application/json' \
-     -d @create.json
-
-.. code-block:: json
-
-    {
-      "status" : 201,
-      "message" : "created credential/05797630-c1e2-488b-96cd-2e44acc8e286",
-      "resource-id" : "credential/05797630-c1e2-488b-96cd-2e44acc8e286",
-      "secretKey" : "..."
-    }
-
-
-Note carefully the secret (secretKey) that is returned from the
-server.  The "key" is the value of "resource-id". This secret is not
-stored on the server and cannot be recovered.
 
 
 Using the API Key/Secret
@@ -163,3 +92,8 @@ authenticate with Nuvla.
 
 
 .. _cURL: http://ssdocs.sixsq.com/en/latest/tutorials/ss/automating-slipstream.html#curl
+
+.. _Nuvla WebUI: https://nuv.la/webui
+
+.. _Credentials: https://nuv.la/webui/cimi/credentials
+
