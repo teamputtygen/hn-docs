@@ -53,7 +53,7 @@ provider.
 2. After logging in, capture your full username from your profile page.
 You will need the **complete** username.
 
-.. figure:: ../images/api-key-profile.png
+.. figure:: ../../images/api-key-profile.png
    :alt: User Profile Link
    :width: 100%
    :align: center
@@ -61,7 +61,7 @@ You will need the **complete** username.
 3. Logout from Nuvla and start the password reset process.  The link is
 shown in the screenshot below:
 
-.. figure:: ../images/api-key-reset-password.png
+.. figure:: ../../images/api-key-reset-password.png
    :alt: Reset Password Link
    :width: 100%
    :align: center
@@ -69,7 +69,7 @@ shown in the screenshot below:
 4. Provide your complete username in the password dialog.  This will send
 a confirmation email to your address.
 
-.. figure:: ../images/api-key-reset-dialog.png
+.. figure:: ../../images/api-key-reset-dialog.png
    :alt: Reset Password Dialog
    :width: 100%
    :align: center

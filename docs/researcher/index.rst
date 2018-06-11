@@ -9,15 +9,7 @@ by researchers.
    :maxdepth: 1
    :hidden:
 
-   scaling-guidelines
-   linux-vm
-   windows-vm
-   docker-compose
-   docker-swarm
-   kubernetes-cluster
+   iaas-resources
    access-data
-   create-applications
-   api-key
-   benchmark
-   batch-clusters
+   orchestration/index.rst
    
