@@ -23,7 +23,8 @@ Slurm
 An example SlipStream application for a `Slurm cluster`_ is
 provided. This example deploys a fully functioning Slurm cluster with
 one master node and multiple workers (two by default). All the nodes
-participate in an NFS file system exported by the master node.
+participate in an NFS file system exported by the master node for the
+**tuser** account.
 
 To deploy the cluster, navigate to the "slurm-cluster" application
 within Nuvla and click the ``Deploy...`` action. You can choose which
@@ -42,17 +43,26 @@ You can also deploy this application from the command line using the
   $ ss-execute \
       --parameters=worker:multiplicity=4 \
       --keep-running=on-success \
+      --wait=20 \
+      --final-states=Done,Cancelled,Aborted,Ready \
       apps/BatchClusters/slurm/slurm-cluster
   https://nuv.la/run/98f42dca-98e8-4265-875e-90ddf81d6fca
 
 Use the ``--help`` option to find out how to set other parameters for
-the ``ss-execute`` command.  In particular, the ``--wait`` and
-``--final-states`` options are interesting if you want to wait for the
-deployment to be "Ready".
+the ``ss-execute`` command.  The ``--wait`` and ``--final-states``
+options are interesting if you want to wait for the deployment to be
+"Ready".
 
 Once the deployment is in the "Ready" state, you can log into the
-master node to use the cluster.  The SSH key from your user profile
-will have been added to the ``root`` and ``tuser`` accounts.
+master node to use the cluster.  You can find the IP address for the
+master node from Nuvla in the deployment details page, or you can get
+the IP address **after the deployment is ready** with the command::
+
+  $ ss-get --run=98f42dca-98e8-4265-875e-90ddf81d6fca master.1:hostname
+
+replacing the run ID with the one for your deployment.  The SSH key
+from your user profile will have been added to the ``root`` and
+``tuser`` accounts.
 
  - Log into the ``root`` account to adjust the packages available on
    the server or to change the configuration.  You can also log into
@@ -63,7 +73,9 @@ will have been added to the ``root`` and ``tuser`` accounts.
    commands are available.
 
 Although both accounts are available to you, normally you will use the
-``tuser`` account for running your calculations.
+``tuser`` account for running your calculations.  Data and/or
+executables can be uploaded to or downloaded from the cluster using
+the ``scp`` command.
 
 When your calculations have completed, you can release the resources
 assigned to the cluster by either clicking the ``Terminate`` action
