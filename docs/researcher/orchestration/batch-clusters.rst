@@ -13,7 +13,7 @@ machines.
 
 These types of applications are naturally job or task-based and
 historically have been run on batch systems such as Slurm_, or
-HTCondor_.  These systems can be run within cloud infrastrutures,
+HTCondor_.  These systems can be run within cloud infrastructures,
 although they generally lead to a significant amount of incidental
 complexity and service management overheads.
 
@@ -26,6 +26,9 @@ one master node and multiple workers (two by default). All the nodes
 participate in an NFS file system exported by the master node for the
 **tuser** account.
 
+Starting the Cluster
+~~~~~~~~~~~~~~~~~~~~
+
 To deploy the cluster, navigate to the "slurm-cluster" application
 within Nuvla and click the ``Deploy...`` action. You can choose which
 cloud infrastructure to use, the number of workers, and their size
@@ -37,11 +40,12 @@ from the deployment dialog.
    :align: center
 
 You can also deploy this application from the command line using the
-``ss-execute`` command::
+``ss-execute`` command from the `SlipStream client`_::
 
   $ ss-login --username=<username> --password=<password>
   $ ss-execute \
-      --parameters=worker:multiplicity=4 \
+      --parameters="worker:multiplicity=4,
+                    worker:instance.type=Huge" \
       --keep-running=on-success \
       --wait=20 \
       --final-states=Done,Cancelled,Aborted,Ready \
@@ -52,6 +56,18 @@ Use the ``--help`` option to find out how to set other parameters for
 the ``ss-execute`` command.  The ``--wait`` and ``--final-states``
 options are interesting if you want to wait for the deployment to be
 "Ready".
+
+The example shows how to change the number of worker nodes in the
+cluster with the **worker:multiplicity** parameter.  You can also
+specify the flavor (instance type) of the machine with the
+**worker:instance.type** parameter.  Supported values are: Micro,
+Tiny, Small, Medium, Large, Extra-large, Huge, Mega, Titan, GPU-small,
+and GPU-large.  Access to the GPU and larger machines must be
+requested through support. You can also specify the disk size with
+**worker:disk** and/or **master:disk**.
+
+Using the Cluster
+~~~~~~~~~~~~~~~~~
 
 Once the deployment is in the "Ready" state, you can log into the
 master node to use the cluster.  You can find the IP address for the
@@ -66,16 +82,23 @@ from your user profile will have been added to the ``root`` and
 
  - Log into the ``root`` account to adjust the packages available on
    the server or to change the configuration.  You can also log into
-   the worker nodes to do the same, if necessary.
+   the worker nodes to do the same, if necessary.  You might want to
+   consult the SLURM_ Documentation or `Administrator Quick Start`_
+   for managing SLURM.
 
  - Log into the ``tuser`` account to run your jobs.  This is a normal
-   user account with fewer privileges.  All the usual Slurm
-   commands are available.
+   user account with fewer privileges.  You might want to consult the
+   SLURM_ Documentation or `User Quick Start`_ for information on
+   using SLURM for running your applications.
 
 Although both accounts are available to you, normally you will use the
-``tuser`` account for running your calculations.  Data and/or
-executables can be uploaded to or downloaded from the cluster using
-the ``scp`` command.
+``tuser`` account for running your calculations.
+
+**Data and/or executables can be uploaded to or downloaded from the
+cluster using the** ``scp`` **command.**
+
+Stopping the Cluster
+~~~~~~~~~~~~~~~~~~~~
 
 When your calculations have completed, you can release the resources
 assigned to the cluster by either clicking the ``Terminate`` action
@@ -91,8 +114,15 @@ The command line will wait for the full termination of the run.
              node to your preferred persistent storage.
 
 
-.. _Slurm: https://slurm.schedmd.com/overview.html
+.. _SlipStream Client: http://ssdocs.sixsq.com/en/latest/tutorials/ss/automating-slipstream.html#command-line-client
+
+.. _SLURM: https://slurm.schedmd.com/overview.html
 
 .. _HTCondor: https://research.cs.wisc.edu/htcondor/ 
 
 .. _Slurm cluster: https://nuv.la/module/apps/BatchClusters/slurm/slurm-cluster
+
+.. _Administrator Quick Start: https://slurm.schedmd.com/quickstart_admin.html
+
+.. _User Quick Start: https://slurm.schedmd.com/quickstart.html
+
