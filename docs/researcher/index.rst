@@ -9,7 +9,7 @@ by researchers.
    :maxdepth: 1
    :hidden:
 
-   iaas-resources
+   exoscale/index.rst
    access-data
    orchestration/index.rst
    
