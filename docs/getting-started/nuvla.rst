@@ -73,10 +73,9 @@ Upon selection of the identity provider, users will be redirected to
 their institute's login page.
 
 5. When successfully authenticating with the identity provider, the
-   user will then be redirected back to Nuvla, which will show the
+   user will then be redirected back to Nuvla. The
    active session parameters, including the user's full username and
-   roles.  `This page <https://nuv.la/authn/login>`_ can be viewed at
-   anytime to show this information.
+   roles can be browsed from `this page <https://nuv.la/webui/profile>`_.
 
 .. image:: ../images/nuvlaSessionInfo.png
    :alt: User's session information
@@ -132,8 +131,8 @@ you deploy, you should provide a public SSH key. Once this key has
 been added to your profile, Nuvla will automatically configure all
 deployed virtual machines with this key, giving you 'root' access to
 your deployed machines. The instructions for creating an SSH key pair
-and configuring your profile can be found in the `Remote Machine
-Access`_ section of the SlipStream documentation.  This documentation
+and configuring your profile can be found in the `Remote Machine Access`_ 
+section of the SlipStream documentation.  This documentation
 also describes the installation of a "Remote Desktop Connection"
 client for accessing Windows machines.
 
@@ -198,3 +197,4 @@ specific needs, contact SixSq support to request new ones.
 
 .. _`here`: ../administrator/index.html
 
+.. _`Remote Machine Access`: http://ssdocs.sixsq.com/en/latest/tutorials/ss/appendix.html?highlight=Remote%20Machine%20access#remote-machine-access
