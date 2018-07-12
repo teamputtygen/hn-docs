@@ -23,6 +23,7 @@ the following characteristics:
 
  - One master node and multiple workers (two by default).
  - The ``/home`` area exported by the master to all of the workers.
+ - A ``/scratch`` area with local scratch space on all nodes.
  - A single, default SLURM partition containing all nodes.
  - Common software packages (e.g. g++, OpenMPI) are installed.
  - The root account on the master can access all workers via SSH.
@@ -165,7 +166,23 @@ for information on using SLURM for running your applications.
 The entire ``/home`` area is exported via NFS to all workers.
 Consequently, all user accounts have a shared NFS home area across the
 cluster.  Data and/or executables uploaded to the master node will be
-visible across the cluster. 
+visible across the cluster.
+
+There is also a ``/scratch`` area on each node that provides local
+scratch disk space.  Keep in that this scratch space:
+
+ - Is fully accessible to all users.  Create subdirectories with more
+   restricted permissions if you want to isolate your files from other
+   users.
+
+ - Resides on the root partition.  Be careful not to fill this space
+   completely as it could have negative consequences for the operating
+   system.
+
+Unlike the standard ``/tmp`` directory, the ``/scratch`` area is not
+subject to the operating system's periodic clean up.  You must
+manually remove files to free disk space.
+
 
 Stopping the Cluster
 --------------------
