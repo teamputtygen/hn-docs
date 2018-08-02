@@ -95,5 +95,5 @@ authenticate with Nuvla.
 
 .. _Nuvla WebUI: https://nuv.la/webui
 
-.. _Credentials: https://nuv.la/webui/cimi/credentials
+.. _Credentials: https://nuv.la/webui/cimi/credential
 
