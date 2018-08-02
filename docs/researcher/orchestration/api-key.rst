@@ -54,7 +54,7 @@ browser interface to Nuvla.  The procedure to do this is:
     desired.
  8. Click on "create".
  9. Note the secret provided in the dialog.  You will not be able to
-    recover this secret later.
+    recover this secret later. Your API key is the "resource-id" field and the secret the "secretKey".
 
 .. image:: ../images/api-key-add-dialog.png
    :scale: 75 %
