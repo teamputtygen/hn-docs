@@ -1,4 +1,6 @@
 
+.. _exoscale-account:
+
 Exoscale Account
 ================
 
@@ -16,6 +18,7 @@ manage its users.  Contact your administrator directly to obtain an
 account.  If you don't know your administrator, you can contact the
 Support HelpDesk (`support@sixsq.com`_).
 
+.. _voucher-redemption:
 
 Voucher Redemption
 ------------------
@@ -52,6 +55,33 @@ within a web browser. A typical link looks like::
    :align: center
 
 4. You're in and you may now spawn new instances.
+
+
+.. _exoscale-ssh-config:
+
+SSH Configuration
+-----------------
+
+It is very strongly recommended that you **use SSH keys to access your
+running virtual machines.**
+
+To add your public SSH key to your account, navigate to the "Compute"
+tab and then the "SSH Keys" panel in the `Exoscale portal`_.  From
+here, click on the "ADD" button to upload your public SSH key.  You
+should see a dialog similar to the following screenshot.
+
+.. image:: ../images/exoscale-ssh-key-import.png
+   :alt: Exoscale Account Details
+   :width: 80%
+   :align: center
+
+Provide a descriptive name for the key, paste your **public** key into
+the textbox, and then click on "IMPORT".  After the import, click on
+the "Set as default" link below the key to make it the default.
+
+You can also use this interface to create a new SSH key pair.  If you
+do this, be sure to save the generated private key and configure your
+laptop to use this key.
 
 
 Access to GPUs

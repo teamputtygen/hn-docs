@@ -13,7 +13,7 @@ at large.
 
 This PCP calls for the design and implementation of an innovative
 Infrastructure as a Service (IaaS) solutions for compute, storage,
-network connectivity, Federated Identity Management and Service
+network connectivity, Federated Identity Management, and Service
 Payment Models, to augment and to enhance the science community’s
 existing systems.
 
@@ -38,35 +38,45 @@ The Pilot (Phase 3) exercises the Consortium's platform at a larger
 scale and allows for continued evolution of the platform to meet the
 needs of scientific computing.
 
+.. _functional-overview:
+
 Functional Overview
 -------------------
 
 The cloud platform coming from the design phase provides
-cost-effective access to large-scale compute and storage resources
-from multiple providers.  The solution brings together three
-commercial services, an authentication infrastructure that supports
-federated identities, and a data management infrastructure that can
-handle the large data sets of the Buyers Group. All the components are
-based on open source software released under the Apache 2.0 license,
-which allows liberal academic and commercial reuse.
+cost-effective access to large-scale compute and storage resources.
+The solution brings together two commercial services, an
+authentication infrastructure that supports federated identities, and
+a data management infrastructure that can handle the large data sets
+of the Buyers Group.
 
-Our solution includes the following main components:
+Authentication (KeyCloak)
+    Federates external identity providers, allowing users to use their
+    “home” credentials to access the platform.
 
-- Authentication (KeyCloak): federates external identity providers,
-  allowing users to use their “home” credentials to access the
-  platform
-- Orchestration (Nuvla): allows users to manage the full lifecycle of
-  cloud applications with a high degree of automation
-- Data Management (Onedata): allows users to access and to manage
-  large datasets hosted in hybrid cloud infrastructures and/or at a
-  Buyers Group organization with minimum intrusion
-- Networking (peering with GÉANT): allows access to all the platform
-  services from anywhere with enhanced access from sites connected to
-  GÉANT
-- Cloud Resources (Exoscale): IaaS and storage services accessible
-  from the hybrid cloud platform
-- Dashboard (Exoscale, Nuvla): provides an overview of Users’ current
-  activities.
+Orchestration (Nuvla)
+    Allows users to manage the full lifecycle of cloud applications
+    with a high degree of automation.
+
+Data Management (Onedata)
+    Allows users to access and to manage large datasets hosted in
+    hybrid cloud infrastructures and/or at a Buyers Group organization
+    with minimum intrusion.
+    
+Networking (peering with GÉANT)
+    Allows access to all the platform services from anywhere with
+    enhanced access from sites connected to GÉANT.
+
+Cloud Resources (Exoscale)
+    IaaS and storage services accessible from the hybrid cloud
+    platform.
+    
+Dashboard (Exoscale, Nuvla)
+  Provides an overview of users’ current activities.
+
+All the components are based on open source software released under
+the Apache 2.0 license, which allows liberal academic and commercial
+reuse.
 
 .. figure:: images/architecture-overview.png
    :alt: Architectural Overview
@@ -74,7 +84,7 @@ Our solution includes the following main components:
    :align: center
 
 The integration of these key components was demonstrated during the
-prototype phase.  The pilot phase will concentrate on validating the
+prototype phase.  The pilot phase concentrates on validating the
 platform at scale.
 
 Actors

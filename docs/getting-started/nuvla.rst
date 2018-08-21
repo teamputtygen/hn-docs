@@ -1,4 +1,6 @@
 
+.. _nuvla-account:
+
 Nuvla Account
 =============
 
@@ -6,17 +8,14 @@ Orchestration features are implemented by `Nuvla`_.  Use of Nuvla is
 entirely optional, although some automated deployment of systems
 (e.g. SLURM) will not be available otherwise.
 
+.. _nuvla-registration:
 
 Registration
 ------------
 
 New users may create their accounts by registering with Nuvla with
-their institutional credentials (through the eduGAIN and Elixir AAI
-identity federations).
-
-.. note:: Currently the registration process is being updated.  If you
-          need to register before the new registration process is in
-          place, contact `support@sixsq.com`_.
+their institutional credentials through the eduGAIN and Elixir AAI
+identity federations.
 
 The full procedure to activate an account in Nuvla using
 your institutional credentials is as follows:
@@ -24,20 +23,16 @@ your institutional credentials is as follows:
 1. Click on the login button which will then take you to a page to
    select your login method.
 
-.. image:: ../images/nuvlaLogin.png
-   :alt: Nuvla sign in/up page
+.. image:: ../images/nuvla-signup.png
+   :alt: Nuvla welcome page
    :align: center
 
-2. On this page, HNSciCloud users shall select *"HNSciCloud Federated
-   Login"* and select their realm (or tenant), as shown in the figure
-   below.
+2. In this dialog, HNSciCloud should select "HNSciCloud" and then
+   select their realm (or tenant) as shown in the figure below.  Then
+   click on the "sign up" button.
 
-.. image:: ../images/nuvlaLoginMethods.png
-   :alt: Nuvla login methods page
-   :align: center
-
-.. image:: ../images/nuvlaLoginRealms.png
-   :alt: Realm (tenant) selection
+.. image:: ../images/nuvla-method-realm.png
+   :alt: Nuvla sign up dialog
    :align: center
 
 This will redirect users to their respective login realm in `SixSq's
