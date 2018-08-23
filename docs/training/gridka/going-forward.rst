@@ -14,7 +14,7 @@ during the training:
  - Deployed simple and complex cloud applications with Nuvla's browser
    interface,
  - Used Apache Libcloud to deploy virtual machines with Nuvla and
-   Exoscale, and
+   Exoscale (optional), and
  - Viewed the quantity of resources you have used to complete the
    training.
 

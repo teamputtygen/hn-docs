@@ -44,35 +44,46 @@ You will register with Nuvla using your federated identity from
 KIT. Follow the :ref:`nuvla-registration` instructions to create your
 account.
 
+When you log in for the first time, will be redirected to the App
+Store page of Nuvla and offered a tutorial.  You can click away the
+tutorial dialog, as we'll not be using that here.
+
+General Fields
+~~~~~~~~~~~~~~
+
+There are three general user profile fields that you may want to
+change.  Open your user profile, click on the "Edit" action, and then
+open the "General" section by clicking on the header.
+
+ - Change the default cloud to "exoscale-ch-gva" (or another cloud for
+   which you will have credentials).
+ - Verify the "Keep running" parameter is set to "On Success".
+ - Copy your SSH public key into the corresponding textbox.
+
+Afterwards, be sure to click on the ``Save`` action!
+
+.. warning::
+
+   Be sure to copy the full contents of your public SSH key as a
+   **single line of text**!
+
+.. image:: ../../images/nuvla-profile-button.png
+   :alt: Menu Item to Open User Profile
+   :width: 80%
+   :align: center
+
+.. image:: ../../images/nuvla-profile.png
+   :alt: User Profile
+   :width: 80%
+   :align: center
+
+.. image:: ../../images/nuvla-general-fields.png
+   :alt: General Fields to Change in Profile
+   :width: 80%
+   :align: center
 
 
-At the end of the process you will be redirected to the App Store page
-of Nuvla and offered a tutorial.  You can click away the tutorial
-dialog, as we'll not be using that here.
-
-Nuvla Account Configuration
----------------------------
+Cloud Credentials
+~~~~~~~~~~~~~~~~~
 
 TBD...
-
-.. _ssh:
-
-Setting SSH keys
-----------------
-
-So that you can log into virtual machines that you deploy, Nuvla must
-have a copy of your public SSH key.  To add your public SSH
-public key to Nuvla:
-
- - Go to the upper right menu with your `StudentXX` username and
-   choose "Profile".
- - Click the `Edit` button.
- - Open the `General Section` by clicking on the section header.
- - In the Default cloud list, choose `exoscale-ch-gva`.
- - Copy your SSH public key (in Linux usually in
-   ``~/.ssh/id_rsa.pub``) to the `SSH Public Key(s) (one per line)`
-   text area.
- - Click the `Save` action.
-
-Be sure to copy the full contents of your public SSH key as a **single
-line of text**!
