@@ -63,7 +63,7 @@ Starting Virtual Machines
 Once you have logged into the `Exoscale portal`_, you can start new
 virtual machine instances by doing the following:
 
- - Click on the "Compute" tab on the left,
+ - Navigate to the "COMPUTE" tab and then the "INSTANCES" panel,
  - Click the "ADD" button,
  - Fill in the form with the VM characteristics, and then
  - Click on the "CREATE" button.

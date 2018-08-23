@@ -12,9 +12,7 @@ during the training:
  - Created an account on Nuvla,
  - Deployed virtual machines through the Exoscale web portal,
  - Deployed simple and complex cloud applications with Nuvla's browser
-   interface,
- - Used Apache Libcloud to deploy virtual machines with Nuvla and
-   Exoscale (optional), and
+   interface, and
  - Viewed the quantity of resources you have used to complete the
    training.
 

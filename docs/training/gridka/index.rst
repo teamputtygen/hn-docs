@@ -11,6 +11,5 @@ GridKa School, 28 August 2018, Karlsruhe, Germany
    accounts.rst
    exoscale.rst
    nuvla.rst
-   libcloud.rst
    metering.rst
    going-forward.rst

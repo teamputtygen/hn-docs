@@ -9,15 +9,13 @@ together.
 Exoscale Account
 ----------------
 
-Start by registering with Exoscale to create an account there.  You
-will have been given a voucher code that will allow you to create an
-account with 30€ of credit.  This is more than enough to follow the
-training.
+Register with Exoscale to create an account there.  You will have been
+given a voucher code that will allow you to create an account with 30€
+of credit.  This is more than enough to follow the training.
 
-The account you create belongs to you. You are welcome to continue
+**The account you create belongs to you.** You are welcome to continue
 using the account (and any remaining credit) after the training. When
-the credit is gone, you can add more credit or tie a credit card to
-the account.
+the credit is gone, you can add more credit with a credit card.
 
 Follow the :ref:`voucher-redemption` instructions for creating an
 account with the voucher code you received.
@@ -33,7 +31,7 @@ into the `Exoscale portal <https://portal.exoscale.ch>`_ with the
 email address and password you provided.
 
 When you are logged into the Exoscale portal, do the
-:ref:`exoscale-ssh-config` to allow you to log into your virtual
+:ref:`exoscale-ssh-config` to allow you to access your virtual
 machines via SSH.
 
 
@@ -44,9 +42,12 @@ You will register with Nuvla using your federated identity from
 KIT. Follow the :ref:`nuvla-registration` instructions to create your
 account.
 
-When you log in for the first time, will be redirected to the App
-Store page of Nuvla and offered a tutorial.  You can click away the
-tutorial dialog, as we'll not be using that here.
+.. note::
+   
+   When you log in for the first time, will be redirected to the App
+   Store page of Nuvla and offered a tutorial.  You can click away the
+   tutorial dialog, as we'll not be using that here.
+
 
 General Fields
 ~~~~~~~~~~~~~~
@@ -86,4 +87,16 @@ Afterwards, be sure to click on the ``Save`` action!
 Cloud Credentials
 ~~~~~~~~~~~~~~~~~
 
-TBD...
+You must provide your cloud credentials to Nuvla, so that it can act
+on your behalf when provisioning cloud resources.
+
+To learn where to find your Exoscale API key and secret and how to
+configure your user profile see the `main SlipStream
+documentation`_.
+
+For this tutorial, add credentials for the **exoscale-ch-gva** and
+**exoscale-de-fra** regions. The API key and secret will be the same
+for all Exoscale regions.
+
+
+.. _`main SlipStream documentation`: https://ssdocs.sixsq.com/en/latest/tutorials/ss/prerequisites.html#exoscale
