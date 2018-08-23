@@ -19,6 +19,7 @@ for complete information on these topics.
    :maxdepth: 1
    :hidden:
 
+   lifecycle
    vpn
    
 

@@ -68,38 +68,52 @@ Upon selection of the identity provider, users will be redirected to
 their institute's login page.
 
 5. When successfully authenticating with the identity provider, the
-   user will then be redirected back to Nuvla. The
-   active session parameters, including the user's full username and
-   roles can be browsed from `this page <https://nuv.la/webui/profile>`_.
+   user will then be redirected back to Nuvla.
 
-.. image:: ../images/nuvlaSessionInfo.png
-   :alt: User's session information
+.. warning::
+
+   Currently there is no "success" message when you are sent back to
+   Nuvla.  When you arrive back on Nuvla, just login via one of the
+   "Login" buttons.
+
+   To login, click on one of the login buttons, select the
+   authentication and tenant (realm), and then click the green "login"
+   button.
+
+.. image:: ../images/nuvla-login-buttons.png
+   :alt: Login Buttons on Welcome Page
    :align: center
 
-6. The user will then be automatically redirect to the Nuvla
-   dashboard.
+.. image:: ../images/nuvla-login-dialog.png
+   :alt: Login Dialog
+   :align: center
+
+6. Depending on how recently you authenticated with your identity
+   provider, you may be requested to authenticate again or simply
+   logged in automatically.  When you login, you will normally be
+   redirected to the Nuvla dashboard.
+
+.. note::
+
+   The first time you login you will be redirected to the App Store
+   and offered the chance for a tutorial.  This will not appear on
+   subsequent visits.
 
 .. image:: ../images/nuvlaDashboardRedirect.png
    :alt: Nuvla Dashboard after Redirect
    :align: center
 
-7. If users already have an active session, then they'll be
-   automatically redirected to Nuvla, without going to the identity
-   provider's login page.
-
-8. At this point, new users have been automatically registered in
-   Nuvla and their accounts are now active.
-
-9. Users that are an **ACCOUNT MANAGER** must send an email to
+7. Users that are an **ACCOUNT MANAGER** must send an email to
    `support@sixsq.com`_ asking *admin* rights to the tenant, which
    shall be granted by SixSq, in `SixSq's Federated Identity Portal`_,
    where the account managers can then manage users, groups and roles
    (as described in `here`_).
 
-10. All **OTHER USERS** must contact the account manager for the realm
-    so that the manager can assign roles to them or add them to a
-    group.
-    
+8. **STANDARD USERS** may want to contact the account manager for
+   their realm so that the manager can assign roles to them or add
+   them to a group.  (This configuration may or may not be done
+   automatically.)
+
 
 Account Configuration
 ---------------------
@@ -140,47 +154,9 @@ specific user role (**can_deploy**) to be given to them, as described
 in :doc:`../administrator/cloud-configuration`.
 
 
-.. _`Portal`: https://portal.exoscale.com
 .. _`support@sixsq.com`: support@sixsq.com
 
-
-Components and Applications
----------------------------
-
-The first place to look for interesting components (single virtual
-machine services) and applications (multiple machine services) is the
-`Nuvla App Store`_.
-
-.. figure:: ../images/nuvlaAppStore.png
-   :alt: Support Desk Diagram
-   :width: 100%
-   :align: center
-
-Within the `Nuvla Workspace`_, there are other applications of interest:
-
- - ``examples/images``: Minimal distributions of common operating
-   systems. Usually used as the basis for other components.
- - ``apps``: Curated list of applications that can be used as examples
-   for your own applications.
- - ``HNSciCloud``: `This`_ workspace contains several prearranged components and applications to facilitate the testing and evaluation process, including for example:
-
-    - ``HNSciCloud/Benchmarking``: Both generic and HNSciCloud-specific benchmarks for evaluating the system. Relevant for Test Cases 2.2, 5.1 and 11.4.3.
-    - ``HNSciCloud/Images``: A subset of ``examples/images``, containing only the HNSciCloud specific operating systems.
-    - ``HNSciCloud/VMProvisioningPersonalisation``: An App for testing the provisioning and contextualization of a VM, according to Test Case 2.5.
-    - ``HNSciCloud/S3EndpointTest-Exoscale_OTC``: An App for testing S3 in both Exoscale and OTC, according to Test Case 2.3.
-    - ``HNSciCloud/HDF5_IO``: An App for verifying HDF5 compliance with the VMs' local storage in the cloud, according to Test Case 4.1.
-
-Other application definitions will appear over time.  If you have
-specific needs, contact SixSq support to request new ones.
-
-.. _`Nuvla App Store`:  https://nuv.la/appstore
-.. _`This`: https://nuv.la/module/HNSciCloud
-.. _`Nuvla Workspace`: https://nuv.la/module
-
-
 .. _`Nuvla`: https://nuv.la
-
-.. _`https://nuv.la/webui/login`: https://nuv.la/webui/login
 
 .. _`SixSq's Federated Identity Portal`: https://fed-id.nuv.la/auth
 

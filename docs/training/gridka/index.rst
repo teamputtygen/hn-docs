@@ -13,4 +13,4 @@ GridKa School, 28 August 2018, Karlsruhe, Germany
    nuvla.rst
    libcloud.rst
    metering.rst
-   conclusions.rst
+   going-forward.rst

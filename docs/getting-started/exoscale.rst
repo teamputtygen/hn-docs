@@ -24,8 +24,15 @@ Voucher Redemption
 ------------------
 
 You may have been given a voucher for HNSciCloud credit on Exoscale.
-To redeem an Exoscale_ voucher, open the provided voucher link
-within a web browser. A typical link looks like::
+You can either create a new account using the voucher or add the
+credit to an existing account.
+
+Create Account
+~~~~~~~~~~~~~~
+
+To redeem an Exoscale_ voucher and **create a new account**, open the
+provided voucher link within a web browser. A typical link looks
+like::
 
     https://portal.exoscale.com/register?coupon=XXXXXXX
 
@@ -57,6 +64,18 @@ within a web browser. A typical link looks like::
 4. You're in and you may now spawn new instances.
 
 
+Credit an Existing Account
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+If you **already have an Exoscale account**, you can add the voucher
+credit to it.  Simply make sure that you are logged into the `Exoscale
+portal`_ and then visit the link:
+
+    https://portal.exoscale.com/account/funds/redeem-coupon
+
+Just enter the code and the amount of the voucher will be credited to
+your account.
+
 .. _exoscale-ssh-config:
 
 SSH Configuration
@@ -84,28 +103,16 @@ do this, be sure to save the generated private key and configure your
 laptop to use this key.
 
 
-Access to GPUs
---------------
+GPUs and Large Flavors
+----------------------
 
 To request access to the Exoscale GPU instance flavor, just submit a
-support ticket to `support@sixsq.com`_.
+support ticket to `support@sixsq.com`_.  You can do the same if you
+need access to the "Mega" or "Titan" flavors. 
 
 If you have registered using a voucher, please specify that it's
 related to the HNSciCloud project in order to speedup the request.
 
-
-Starting Virtual Machines
--------------------------
-
-Once you have logged into the `Exoscale portal`_, you can start new
-virtual machine instances by clicking on the "Compute" tab on the
-left, clicking the "ADD" button, and then filling in the form to
-define the characteristics of you new virtual machine instance.
-
-.. image:: ../images/exoscale-vm-add.png
-   :alt: New Virtual Machine Instance Form
-   :width: 80%
-   :align: center
 
 .. _`support@sixsq.com`: support@sixsq.com
 

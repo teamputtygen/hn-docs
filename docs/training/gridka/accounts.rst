@@ -32,8 +32,6 @@ mail client. After the email validation, you should be able to log
 into the `Exoscale portal <https://portal.exoscale.ch>`_ with the
 email address and password you provided.
 
-.. _exoscale-ssh-config:
-
 When you are logged into the Exoscale portal, do the
 :ref:`exoscale-ssh-config` to allow you to log into your virtual
 machines via SSH.

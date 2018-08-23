@@ -20,5 +20,5 @@ To follow the complete end-user tutorial, you must have the following:
 As you are all from KIT, you should be able to log into the platform
 using the credentials from the KIT Shibboleth Identity Provider.  
 
-If you don't have these, consult the referenced documentation, ask
-your administrator, or chat with the tutor.
+If you don't meet any of the prerequisites, consult the referenced
+documentation, ask your administrator, or chat with the tutor.

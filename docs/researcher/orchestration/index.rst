@@ -9,6 +9,7 @@ of the Nuvla service.
    :maxdepth: 1
    :hidden:
 
+   lifecycle
    scaling-guidelines
    linux-vm
    windows-vm
