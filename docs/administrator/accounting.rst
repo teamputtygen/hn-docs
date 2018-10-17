@@ -3,8 +3,8 @@
 Accounting
 ==========
 
-Dashboard
----------
+Browser Dashboard
+-----------------
 
 Nuvla provides a convenient dashboard to show your resource usage.  If
 you are a tenant administrator, you will also be able to see the usage
@@ -74,8 +74,8 @@ inaccurate.
 The table is interactive and you can click on the column headers to
 reorder the results by the values in the column.
 
-API
----
+REST API
+--------
 
 The usage dashboard is driven entirely by the Nuvla API.  You can also
 use this API directly to obtain custom views of the usage information.
