@@ -23,7 +23,7 @@ of it being used as the deployment engine or not.
 
 Further, the monitoring resource inherits the basic CIMI
 functionality, which means it contains specific and precise ACLs, such
-that only specific users, groups and organisation members with the
+that only specific users, groups and organization members with the
 appropriate rights have access to this information.
 
 This resource is key for other new features, such as the
@@ -46,6 +46,6 @@ information:
  * Count of running virtual machines, grouped by cloud
 
 From the list above, *priviledged rights* include administration
-rights (super user), as well as group and organisation owners.
+rights (super user), as well as group and organization owners.
 
-.. _`monitoring cloud activities`: http://ssapi.sixsq.com/#virtual-machines
+.. _`monitoring cloud activities`: https://ssapi.sixsq.com/#virtualmachine-(cimi)

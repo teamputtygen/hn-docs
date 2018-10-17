@@ -103,17 +103,8 @@ filtering capabilities, provides together a powerful, yet simple, way
 to extract accounting information from Nuvla.
 
 The `dedicated API`_ documentation provides several examples of
-queries in order to extract useful information, such as:
+queries in order to extract useful information, such as pricing or
+vCPUs, for a given group and time period.  This feature can also be
+used to plot trends, trigger alerts and much more.
 
- * Pricing for any from/to time interval (full days)
- * Extract daily, weekly and monthly consumption aggregation
-   (e.g. CPU, RAM, Disk)
- * Extract peak usage over a given time interval, grouped by cloud,
-   for a user, group and/or organization
- * Sum CPU, RAM and/or disk usage, for a given time interval and for a
-   cloud, a user, group and/or organization
-
-Again, these are only example of possible queries.  This feature can
-also be used to plot trends, trigger alerts and much more.
-
-.. _`dedicated API`: https://ssapi.sixsq.com/#usage-(cimi)
+.. _`dedicated API`: https://ssapi.sixsq.com/#metering-(cimi)
