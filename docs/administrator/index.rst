@@ -35,5 +35,6 @@ Portal`_ and login.
    whitelisting
    block-new-users
    monitoring
+   quota
    accounting
    

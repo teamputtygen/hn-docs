@@ -12,4 +12,5 @@ by researchers.
    exoscale/index.rst
    access-data
    orchestration/index.rst
+   quota
    
