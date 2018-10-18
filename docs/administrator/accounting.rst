@@ -83,13 +83,13 @@ use this API directly to obtain custom views of the usage information.
 Nuvla provides a new `dedicated API`_ resource for monitoring and
 accounting information. The CIMI resources of interest are:
 
- - "VirtualMachine": Provides information on all active virtual
+ - **VirtualMachine**: Provides information on all active virtual
    machine.  Together, these resources show the global current state
    of the hybrid cloud infrastructure.
- - "Metering": These are snapshots of the "virtual-machine" resources
+ - **Metering**: These are snapshots of the "virtual-machine" resources
    that are take every minute.  These provide historical usage
    information and are the basis of the usage dashboard.
- - "StorageBucket": These provide information on the usage of S3
+ - **StorageBucket**: These provide information on the usage of S3
    resources on the cloud. This information is not include in the
    browser interface, but can be obtained from the API. 
 
