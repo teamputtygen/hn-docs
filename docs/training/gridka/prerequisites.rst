@@ -13,7 +13,7 @@ To follow the complete end-user tutorial, you must have the following:
 - An **OpenSSH** keypair
   
   - `Linux/Mac OS <https://www.ssh.com/ssh/keygen/>`_
-  - `Windows <https://www.ssh.com/ssh/putty/windows/puttygen>`_
+  - `Windows <https://puttygen.com>`_
     
 - An identity from an eduGAIN or Elixir AAI Identity Provider.
 
